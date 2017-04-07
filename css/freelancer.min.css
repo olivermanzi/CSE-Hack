@@ -114,8 +114,8 @@ header .jumbotron{
 }
 
 [role=banner] {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)) center center, url(../img/gothenburg.JPG) center center no-repeat fixed;
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)) center center, url(../img/gothenburg.JPG) center center no-repeat fixed;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)) center center, url(../img/gothenburg.jpg) center center no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)) center center, url(../img/gothenburg.jpg) center center no-repeat fixed;
     min-height: 100vh;
     height: 100vh;
     background-size: cover;
