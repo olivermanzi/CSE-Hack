@@ -1,11 +1,17 @@
 $(document).ready(function() {
+  $(".one-slide").owlCarousel({
+    items : 1,
+    transitionStyle:"fade",
+    itemsDesktop : [1199,3],
+    itemsDesktopSmall : [979,3]
+
+  });
     //four slide
     $(".four-slide").owlCarousel({
       items : 4,
       transitionStyle:"fade",
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3]
-
     });
     //three slide
     $(".three-slide").owlCarousel({
