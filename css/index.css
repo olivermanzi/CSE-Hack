@@ -1,0 +1,159 @@
+/*---------------------fonts------------------------
+font-family: 'Bungee', cursive; <--headers
+font-family: 'Bungee Shade', cursive; <--title
+font-family: 'Faster One', cursive; <-- on white
+font-family: 'Cabin', sans-serif; <-- paragraphs/ ~navigation
+font-family: 'Quicksand', sans-serif; <-- navigation/paragraphs
+*/
+
+/*---------------------responsive------------------------*/
+/*Viewport is the browser window size. 1vw = 1% of viewport width. 
+If the viewport is 50cm wide, 1vw is 0.5cm.*/
+
+html{
+    font-size: 16px;
+}
+
+body{
+    margin:0;
+    position: relative;
+}
+
+#semLogo{
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+/* ------------------------ Welcome ------------------------*/
+#header {
+    background-color:#454140;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    
+    /*full page*/
+    background-position: center;
+    background-repeat: no-repeat;
+    height:50vw;
+    width: 100%;
+}
+
+#title h1{
+    color: rgb(207, 58, 58); /*#2ECC71*/
+    font-family: Bungee Shade;
+    font-weight: bold;
+    font-size: 6vw;
+    text-align: left;
+    margin-top: 25%;
+    margin-left: 10%;
+}
+
+#logo img{
+    overflow: hidden;
+    max-width: 35%;
+    height: auto;
+    position: left;
+    margin-top: 35%;
+    margin-left: 40%;
+}
+
+
+/* ------------------------ navbar ------------------------*/
+
+#navBar{
+    background-color: #454140c5;
+}
+
+#navItem{
+    font-family: Quicksand;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    font-size:1vw;
+}
+
+#navItem a {
+    display: block;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px; 
+}
+
+#navItem a:hover{
+    background-color: #111;
+}
+
+/* ------------------------ content ------------------------*/
+
+#hack{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    margin: 3rem 0rem;
+}
+
+#hack h2 {
+    font-family: Faster One;
+    font-size: 5vw;
+    text-align: center;
+}
+
+#hack #hack-content{
+    padding-right: 10%;
+}
+
+#hack-content p {
+    font-family: Cabin, Quicksand;
+    font-family: .5vw;
+}
+
+#hack-content img {
+    max-width: 80%;
+    height: auto;
+    position: center;
+}
+
+#team {
+    background-color: #69306D;
+    height: 100%;
+    width: 100%;
+    top: 2rem;
+}
+
+#organizers{
+    top: 5vw;
+}
+
+#teamPic img {
+    max-width: 100%;
+    height: auto;
+}
+/* ------------------------ footer ------------------------*/
+.foot{
+    top:0;
+    bottom: 0;
+    padding: 1rem .5rem;
+    background-color: #3e4444;
+
+}
+
+.foot img{
+    max-width:25vw;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+/* ------------------------ tester ------------------------*/
+.filler {
+    border: 1rem solid gray;
+    background-color: #454140;
+    height: 20vw;
+    width: 100%;
+}
+
+.redBorder{
+    border: .5rem solid red;
+}
+
+
+
