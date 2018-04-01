@@ -89,22 +89,24 @@ body{
     background-color: white;
     height: 100%;
     width: 100%;
-    margin: 3rem 0rem;
+    margin: 5rem 0rem 5rem 0rem;
 }
 
 #hack h2 {
-    font-family: Faster One;
+    font-family: Bungee Shade;
     font-size: 5vw;
-    text-align: center;
+    text-align: left;
 }
 
 #hack #hack-content{
     padding-right: 10%;
+    margin-top: 15vw;
 }
 
 #hack-content p {
     font-family: Cabin, Quicksand;
-    font-family: .5vw;
+    font-size: 1vw;
+    margin: 3rem 0rem 1rem 0rem;
 }
 
 #hack-content img {
@@ -114,19 +116,36 @@ body{
 }
 
 #team {
-    background-color: #69306D;
+    background-color: white;
     height: 100%;
     width: 100%;
-    top: 2rem;
+    margin: 5rem 0rem 5rem 0rem;
+    padding: 5rem 0rem;
 }
 
-#organizers{
-    top: 5vw;
+#teamText {
+    padding: 4rem 3rem 1.5rem 1rem;
 }
+
+#teamText h2 {
+    font-family: Bungee;
+    font-size: 5vw;
+    text-align: left;
+}
+
+#teamText p {
+    font-family: Cabin;
+    font-size: 1vw;
+}
+
+#teamPic{
+    margin: 2% 1%;
+}
+
 
 #teamPic img {
-    max-width: 100%;
-    height: auto;
+    max-width: auto;
+    height: 10vw;
 }
 /* ------------------------ footer ------------------------*/
 .foot{
