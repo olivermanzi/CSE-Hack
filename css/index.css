@@ -1,9 +1,11 @@
 /*---------------------fonts------------------------
-font-family: 'Bungee', cursive; <--headers
 font-family: 'Bungee Shade', cursive; <--title
-font-family: 'Faster One', cursive; <-- on white
-font-family: 'Cabin', sans-serif; <-- paragraphs/ ~navigation
-font-family: 'Quicksand', sans-serif; <-- navigation/paragraphs
+font-family: 'Bungee', cursive; <--headers
+font-family: 'Bungee Inline', cursive; <--headers
+font-family: 'Bungee Outline', cursive; <--headers
+font-family: 'Bungee Hairline', cursive; <--headers
+font-family: 'Cabin', sans-serif; <-- paragraphs
+font-family: 'Quicksand', sans-serif; <-- paragraphs
 */
 
 /*---------------------responsive------------------------*/
@@ -27,19 +29,25 @@ body{
 
 /* ------------------------ Welcome ------------------------*/
 #header {
+    /*image and backup*/
+    /*background-image: url("../img/lindholmen/kuggen.jpg");*/
     background-color:#454140;
+    min-height: 100%;
+    min-width: 1024px;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+
+
+    /*scaling*/
     background-size: 100% auto;
     background-attachment: fixed;
-    
-    /*full page*/
-    background-position: center;
     background-repeat: no-repeat;
     height:50vw;
     width: 100%;
 }
 
 #title h1{
-    color: rgb(207, 58, 58); /*#2ECC71*/
+    color: white;/* rgb(207, 58, 58) or #2ECC71*/
     font-family: Bungee Shade;
     font-weight: bold;
     font-size: 6vw;
@@ -52,7 +60,7 @@ body{
     overflow: hidden;
     max-width: 35%;
     height: auto;
-    position: left;
+    position: relative;
     margin-top: 35%;
     margin-left: 40%;
 }
@@ -83,30 +91,33 @@ body{
     background-color: #111;
 }
 
-/* ------------------------ content ------------------------*/
+/* ------------------------ CONTENT ------------------------*/
 
+/* --------- hack --------- */
 #hack{
     background-color: white;
     height: 100%;
     width: 100%;
-    margin: 5rem 0rem 5rem 0rem;
+    margin-top: 15%;
+    margin-bottom:20%;
 }
 
 #hack h2 {
     font-family: Bungee Shade;
     font-size: 5vw;
     text-align: left;
+    padding: 4rem 3rem 1.5rem 4rem;
 }
 
 #hack #hack-content{
     padding-right: 10%;
-    margin-top: 15vw;
+    margin-top: 5vw;
 }
 
 #hack-content p {
     font-family: Cabin, Quicksand;
-    font-size: 1vw;
-    margin: 3rem 0rem 1rem 0rem;
+    font-size: 1.5vw;
+    margin: 2rem 0rem 4rem 0rem;
 }
 
 #hack-content img {
@@ -115,16 +126,20 @@ body{
     position: center;
 }
 
+/* --------- cases --------- */
+
+/* --------- team --------- */
 #team {
-    background-color: white;
+    background-color: #009198;
     height: 100%;
     width: 100%;
-    margin: 5rem 0rem 5rem 0rem;
+    margin: 5rem 0rem 0rem 0rem;
     padding: 5rem 0rem;
 }
 
 #teamText {
-    padding: 4rem 3rem 1.5rem 1rem;
+    margin-top: 5%;
+    padding: 4rem 3rem 1.5rem 4rem;
 }
 
 #teamText h2 {
@@ -135,7 +150,9 @@ body{
 
 #teamText p {
     font-family: Cabin;
-    font-size: 1vw;
+    font-size: 1.5vw;
+    text-align: left;
+    width: 75%;
 }
 
 #teamPic{
@@ -146,14 +163,98 @@ body{
 #teamPic img {
     max-width: auto;
     height: 10vw;
+    border-radius: 50%;
 }
-/* ------------------------ footer ------------------------*/
-.foot{
-    top:0;
-    bottom: 0;
-    padding: 1rem .5rem;
-    background-color: #3e4444;
 
+#teamPicNames {
+    font-weight: bold;
+    color: #4b4b4b;
+}
+
+/* --------- faq --------- */
+#faq {
+    background-color: #FCB500;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_grid_responsive*/
+#faqItems {
+    height: 15vw;
+    width: 100%; 
+}
+
+#faq h2{
+    font-family: Bungee Outline;
+    font-size: 5vw;
+    text-align: left;
+    margin-top: 5%;
+    padding: 4rem 3rem 1.5rem 4rem;
+}
+
+#faqItems a{
+    max-width: 100%;
+    height: 10vw;
+    text-decoration: none;
+
+}
+
+#faqItems img{
+    max-width: 100%;
+    width: 100%;
+    height: 10vw;
+}
+
+/* --------- terms --------- */
+#terms{
+    background-color: #FCB500;
+}
+
+/* --------- partners --------- */
+#partners{
+
+}
+
+/* ------------------------ END of CONTENT ------------------------*/
+
+/* ------------------------ footer ------------------------*/
+#foot{
+
+    background-color: #3e4444;
+}
+
+.location{
+    padding: 2rem 4rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 20vw;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#department img{
+    overflow: hidden;
+    max-width: 90%;
+    height: auto;
+    position: left;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+
+#copyRight{
+    background-color: #2c3131;
+    color: lightslategray;
+    height: 4%;
+}
+
+#copyRight p{
+    font-family: Quicksand;
+    font-size: .75vw;
+    margin: 2% 0%;
+    padding-left: 25%;
 }
 
 .foot img{
@@ -172,6 +273,14 @@ body{
 
 .redBorder{
     border: .5rem solid red;
+}
+
+.greenBorder{
+    border: .5rem solid green;
+}
+
+.blueBorder{
+    border: .5rem solid blue;
 }
 
 

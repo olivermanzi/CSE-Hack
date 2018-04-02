@@ -11,7 +11,8 @@
     <link href="css/index.css" rel="stylesheet" type="text/css">
 
     <!-- google font api -->
-    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Cabin|Faster+One|Quicksand:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade|Cabin|Quicksand"
+        rel="stylesheet">
 
     <!-- bootstrap api -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -22,7 +23,7 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#navBar">
+<body data-spy="scroll" data-target="#navBar" data-offset="0">
     <!-- header -->
     <header>
         <div class="jumbotron-fluid" id="header">
@@ -41,26 +42,30 @@
 
     <!-- navigation bar -->
 
-    <nav>
+    <nav class="sticky-top">
         <div class="container-fluid">
             <div class="row" id="navBar">
-                <div class="col-sm" id="navItem"></div>
                 <div class="col-sm" id="navItem">
-                    <a href="hack">Our Awesome Hack</a>
+                    <a class="nav-link" href="#hack">Our Awesome Hack</a>
                 </div>
                 <div class="col-sm" id="navItem">
-                    <a href="cases">The cases</a>
+                    <a class="nav-link" href="#cases">The Cases</a>
                 </div>
                 <div class="col-sm" id="navItem">
-                    <a href="team">Our awesome team</a>
+                    <a class="nav-link" href="#team">Our Awesome Team</a>
                 </div>
                 <div class="col-sm" id="navItem">
-                    <a href="faq">FAQ</a>
+                    <a class="nav-link" href="#faq">FAQ</a>
                 </div>
                 <div class="col-sm" id="navItem">
-                    <a href="terms">Terms of Conduct</a>
+                    <a class="nav-link" href="#terms">Terms of Conduct</a>
                 </div>
-                <div class="col-sm" id="navItem"></div>
+                <div class="col-sm" id="navItem">
+                    <a class="nav-link" href="#partners">Our Partners</a>
+                </div>
+                <div class="col-sm" id="navItem">
+                    <a class="nav-link" href="#schedule">The Schedule</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -128,21 +133,21 @@
                             <img src="img/team/Francisco.png" alt="organizer <insert name>" class="img-thumbnail">
                             <h4>insert title here -
                                 <br>
-                                <small class="text-muted"> insert name here</small>
+                                <small id="teamPicNames"> insert name here</small>
                             </h4>
                         </div>
                         <div class="col-sm" id="teamPic">
                             <img src="img/team/Anneli.gif" alt="organizer <insert name>" class="img-thumbnail">
                             <h4>insert title here -
                                 <br>
-                                <small class="text-muted"> insert name here</small>
+                                <small id="teamPicNames"> insert name here</small>
                             </h4>
                         </div>
                         <div class="col-sm" id="teamPic">
                             <img src="img/team/Suzana.jpg" alt="organizer <insert name>" class="img-thumbnail">
                             <h4>insert title here -
                                 <br>
-                                <small class="text-muted"> insert name here</small>
+                                <small id="teamPicNames"> insert name here</small>
                             </h4>
                         </div>
                     </div>
@@ -151,21 +156,21 @@
                             <img src="img/team/Daiva.jpg" alt="organizer <insert name>" class="img-thumbnail">
                             <h4>insert title here -
                                 <br>
-                                <small class="text-muted"> insert name here</small>
+                                <small id="teamPicNames"> insert name here</small>
                             </h4>
                         </div>
                         <div class="col-sm" id="teamPic">
                             <img src="img/team/Dimitris.jpg" alt="organizer <insert name>" class="img-thumbnail">
                             <h4>insert title here -
                                 <br>
-                                <small class="text-muted"> insert name here</small>
+                                <small id="teamPicNames"> insert name here</small>
                             </h4>
                         </div>
                         <div class="col-sm" id="teamPic">
                             <img src="img/team/Simon.png" alt="organizer <insert name>" class="img-thumbnail">
                             <h4>insert title here -
                                 <br>
-                                <small class="text-muted"> insert name here</small>
+                                <small id="teamPicNames"> insert name here</small>
                             </h4>
                         </div>
                     </div>
@@ -174,21 +179,21 @@
                             <img src="img/team/felipe.jpg" alt="organizer <insert name>" class="img-thumbnail">
                             <h4>insert title here -
                                 <br>
-                                <small class="text-muted"> insert name here</small>
+                                <small id="teamPicNames"> insert name here</small>
                             </h4>
                         </div>
                         <div class="col-sm" id="teamPic">
                             <img src="img/team/Imed.jpeg" alt="organizer <insert name>" class="img-thumbnail">
                             <h4>insert title here -
                                 <br>
-                                <small class="text-muted"> insert name here</small>
+                                <small id="teamPicNames"> insert name here</small>
                             </h4>
                         </div>
                         <div class="col-sm" id="teamPic">
                             <img src="img/team/samer.jpg" alt="organizer <insert name>" class="img-thumbnail">
                             <h4>insert title here -
                                 <br>
-                                <small class="text-muted"> insert name here</small>
+                                <small id="teamPicNames"> insert name here</small>
                             </h4>
                         </div>
                     </div>
@@ -197,7 +202,7 @@
                             <img src="img/team/marko.jpg" alt="organizer <insert name>" class="img-thumbnail">
                             <h4>insert title here -
                                 <br>
-                                <small class="text-muted"> insert name here</small>
+                                <small id="teamPicNames"> insert name here</small>
                             </h4>
                         </div>
                     </div>
@@ -209,7 +214,72 @@
     <!-- faq -->
     <section id="faq">
         <div class="container-fluid">
-            <div class="row"></div>
+            <div class="row">
+                <div class="col-sm-6 ">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="col-sm">
+                    <div class="row">
+                        <div class="col-sm">
+                            <a href="#" alt="What is a hackathon?">
+                                <div class="col-sm">
+                                    <h3>What is a "Hackathon"?</h3>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col-sm">
+                            <a href="#" alt="Teamwork?">
+                                <h3>Do I need a team?</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="#" alt="Tips and tricks">
+                                <h3>Do you have any tips?</h3>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <a href="#" alt="Is it free?">
+                                <h3>Is it free?</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="#" alt="Can I sleep at the event?">
+                                <h3>Am I allowed to sleep at the event during hackathon?</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="#" alt="free food?">
+                                <h3>What's the food situation like??</h3>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">
+                            <a href="#" alt="What prizes can I win?">
+                                <h3>List of categories?</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="#" alt="Resources?">
+                                <h3>Are there any resources provided?</h3>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="#" alt="Do I have to speak Swedish?">
+                                <h3>Do I need to speak Swedish?</h3>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -221,10 +291,35 @@
     </section>
 
     <!-- partners -->
+    <section id="partners">
+        <div class="container-fluid">
+
+        </div>
+    </section>
 
     <!-- footer -->
-    <footer>
-
+    <footer id="foot">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-8">
+                    <!-- google maps -->
+                    <div id="map" class="location"></div>
+                </div>
+                <div class="col-sm-3" id="department">
+                    <img src="img/cse/cgu.png" alt="Gothenburg University and Chalmers University of Technology">
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row" id="copyRight">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <p>Copyright &copy; SE Division 2017</p>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
     </footer>
 
     <!-- bootstrap template requirements -->
@@ -234,6 +329,19 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <!-- google maps api -->
+    <script>
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: new google.maps.LatLng(57.706624, 11.937166), zoom: 15
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS1grnImYvqNpRLPZgJXr6UClzNXR98B4&callback=myMap"></script>
+
 </body>
 
 </html>
