@@ -21,6 +21,25 @@ body{
     position: relative;
 }
 
+main {
+    height: 100%;
+    overflow-y: scroll;
+
+}
+
+.sectionTitle h2{
+    font-size: 6.5vw;
+    text-align: left;
+    margin-top: 5%;
+    padding: 4rem 3rem 1.5rem 4rem; 
+}
+
+.sectionText {
+    font-size:1.5vw;
+    font-family: Cabin;
+    font-size: 1.5vw;
+}
+
 #semLogo{
     top: 0;
     left: 0;
@@ -31,20 +50,14 @@ body{
 #header {
     /*image and backup*/
     /*background-image: url("../img/lindholmen/kuggen.jpg");*/
-    background-color:#454140;
-    min-height: 100%;
-    min-width: 1024px;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-
+    background-color:black;
 
     /*scaling*/
     background-size: 100% auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
     height:50vw;
-    width: 100%;
-}
+} 
 
 #title h1{
     color: white;/* rgb(207, 58, 58) or #2ECC71*/
@@ -52,19 +65,24 @@ body{
     font-weight: bold;
     font-size: 6vw;
     text-align: left;
-    margin-top: 25%;
-    margin-left: 10%;
+    padding-left: 10%;
 }
 
 #logo img{
-    overflow: hidden;
+    padding-top: 10%;
     max-width: 35%;
     height: auto;
     position: relative;
-    margin-top: 35%;
-    margin-left: 40%;
 }
 
+#countDown{
+    color: white;/* rgb(207, 58, 58) or #2ECC71*/
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 4vw;
+    text-align: left;
+    padding-left: 10%;
+}
 
 /* ------------------------ navbar ------------------------*/
 
@@ -85,6 +103,8 @@ body{
     text-align: center;
     text-decoration: none;
     padding: 14px 16px; 
+    width: 100%;
+    height:100%; 
 }
 
 #navItem a:hover{
@@ -95,70 +115,71 @@ body{
 
 /* --------- hack --------- */
 #hack{
-    background-color: white;
+    background-color: rgb(53, 53, 53); /*rgb(247, 147, 65)*/
+    color: white;
     height: 100%;
     width: 100%;
-    margin-top: 15%;
-    margin-bottom:20%;
 }
 
 #hack h2 {
-    font-family: Bungee Shade;
-    font-size: 5vw;
-    text-align: left;
-    padding: 4rem 3rem 1.5rem 4rem;
+    font-family: Bungee Inline;
 }
 
-#hack #hack-content{
-    padding-right: 10%;
-    margin-top: 5vw;
+#hackText{
+    padding: 5vw 3vw 8vw 0;
 }
 
-#hack-content p {
-    font-family: Cabin, Quicksand;
-    font-size: 1.5vw;
-    margin: 2rem 0rem 4rem 0rem;
-}
-
-#hack-content img {
-    max-width: 80%;
-    height: auto;
-    position: center;
+#hackText p{
+    width: 85%;
 }
 
 /* --------- cases --------- */
-
-/* --------- team --------- */
-#team {
-    background-color: #009198;
-    height: 100%;
-    width: 100%;
-    margin: 5rem 0rem 0rem 0rem;
+#cases{
+    background-color: white;
+    color: rgb(53, 53, 53);
     padding: 5rem 0rem;
 }
 
-#teamText {
-    margin-top: 5%;
-    padding: 4rem 3rem 1.5rem 4rem;
+#cases h2{
+    font-family: Bungee;
+}
+
+#cases small{
+    font-family: Bungee Hairline;
+    font-size: 2vw;
+}
+
+#caseList {
+    text-decoration: none;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bold;
+    padding: 3rem 2rem 3rem 0;
+}
+
+#caseList ul{
+    list-style-type: none; /*gets rid of bullet points*/
+}
+/* --------- team --------- */
+#team {
+    background-color: rgb(53, 53, 53); /*#009198*/
+    color: white;
+    padding: 5rem 0rem;
 }
 
 #teamText h2 {
-    font-family: Bungee;
-    font-size: 5vw;
+    font-family: Bungee Inline;
+}
+
+#teamTextInfo{
     text-align: left;
+    width: 85%;
+    padding: 5vw 3vw 8vw 0;
 }
 
-#teamText p {
-    font-family: Cabin;
-    font-size: 1.5vw;
-    text-align: left;
-    width: 75%;
+#teamSection{
+    
 }
-
-#teamPic{
-    margin: 2% 1%;
-}
-
 
 #teamPic img {
     max-width: auto;
@@ -173,48 +194,120 @@ body{
 
 /* --------- faq --------- */
 #faq {
-    background-color: #FCB500;
+    background-color: white; /*#FCB500*/
+    color: rgb(53, 53, 53);
     height: 100%;
     width: 100%;
 }
 
-
-/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_grid_responsive*/
 #faqItems {
     height: 15vw;
     width: 100%; 
 }
 
 #faq h2{
-    font-family: Bungee Outline;
-    font-size: 5vw;
-    text-align: left;
-    margin-top: 5%;
-    padding: 4rem 3rem 1.5rem 4rem;
+    font-family: Bungee;
 }
 
-#faqItems a{
+#faqSection{
+    padding: 3rem 0 8rem 0;
+}
+
+.faqCards{
     max-width: 100%;
-    height: 10vw;
-    text-decoration: none;
-
 }
 
-#faqItems img{
+.faqCards h5{
+    font-family:Cabin;
+    font-size: 1.25vw;
+}
+
+.faqCards p{
+    font-family: Cabin;
+    font-size: 1vw;
+}
+
+#faqList{
+    margin: 1rem 0;
     max-width: 100%;
     width: 100%;
-    height: 10vw;
+    height: 100%;
 }
 
+#faq .sectionText a{
+    font-size:1.25vw;
+    font-family: Cabin;
+}
 /* --------- terms --------- */
 #terms{
-    background-color: #FCB500;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding-bottom: 5rem;
+}
+
+#terms h2{
+    font-family: Bungee;
+}
+
+#termImportant{
+    font-family: Cabin;
+    font-weight: bold;
+
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 2rem 3rem 1.5rem 2rem;
+
+    background-color: rgb(65, 63, 63);
+    border-radius: .25rem;
+}
+
+#termList ol{
+    font-family: Cabin;
+
+    padding: 2rem 0;
+}
+
+/* --------- register --------- */
+#register{
+    background-color: white;
+}
+
+#registration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 50vw;
+}
+
+#registration img{
+    max-width: 30vw;
+    height: auto;
+    padding-top: 1.5vw;
+    padding-left: 8vw;
+}
+
+#registration a h2{
+    flex-shrink: 0;
+
+    font-family: Bungee Inline;
+    font-size: 6.5vw;
+    text-decoration: none;
+    text-align: center;
+    color: #FF8F36;
+    margin-top: 5%;
+    padding: 4rem 3rem 1.5rem 6rem; 
+    
+    display: inline-block;
+    cursor: pointer;
+    margin: .25rem .125rem;
+    padding: .5rem .25rem;
+    border-radius: 2%;
+    border: 1rem solid #FF8F36;
+
 }
 
 /* --------- partners --------- */
-#partners{
-
-}
 
 /* ------------------------ END of CONTENT ------------------------*/
 
@@ -263,14 +356,23 @@ body{
     padding-bottom: 1rem;
 }
 
-/* ------------------------ tester ------------------------*/
-.filler {
-    border: 1rem solid gray;
-    background-color: #454140;
-    height: 20vw;
-    width: 100%;
+/* ------------------------ tools ------------------------*/
+
+.red{
+    color:rgb(240, 118, 118);
 }
 
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sillyChild{
+    flex-shrink: 0;
+}
+
+/* ------------------------ tester ------------------------*/
 .redBorder{
     border: .5rem solid red;
 }
