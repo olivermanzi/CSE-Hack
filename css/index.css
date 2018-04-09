@@ -58,7 +58,7 @@ main {
     background-repeat: no-repeat;
     padding-top: 10%;
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 #title h1{
@@ -166,7 +166,6 @@ main {
 #team {
     background-color: rgb(53, 53, 53); /*#009198*/
     color: white;
-    padding: 5rem 0rem;
 }
 
 #teamText h2 {
