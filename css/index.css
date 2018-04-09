@@ -518,6 +518,10 @@ main {
 
 @media only screen and (max-width: 570px){
     #title h1{
-        font-size: 40px;
+        font-size: 37px;
+    }
+    #registration a{
+        padding-left: 80px;
+        text-align: end;
     }
 }
