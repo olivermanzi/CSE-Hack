@@ -108,6 +108,10 @@ main {
     background-color: #111;
 }
 
+#navItem .nav-link.active {
+  background-color: #000;
+}
+
 /* ------------------------ CONTENT ------------------------*/
 
 /* --------- hack --------- */
