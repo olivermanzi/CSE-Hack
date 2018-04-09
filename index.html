@@ -21,6 +21,9 @@
 
     <!-- http://www.bobrosslipsum.com -->
 
+    <!-- elevator api-->
+    <script src='js/elevator.js'></script> <!-- http://tholman.com/elevator.js/ -->
+
 </head>
 
 <body>
@@ -64,6 +67,7 @@
         </div>
     </nav>
 
+
     <!-- header -->
     <header>
         <div class="container" id="header">
@@ -90,6 +94,10 @@
             </div>
         </div>
     </section>
+
+
+    <!-- scroll to top button -->
+    <button onclick="elevator.elevate()" id="scroll2top" type="button" class="btn btn-warning hideButt">Scroll to Top</button>
 
     <!-- intro -->
     <section id="hack">
@@ -428,7 +436,8 @@
                             </div>
                         </div>
                         <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFAQ" role="button" aria-expanded="false" aria-controls="whatIsFAQ">Does FAQ actually mean<br>"frequently asked questions"?</a>
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFAQ" role="button" aria-expanded="false" aria-controls="whatIsFAQ">Does FAQ actually mean
+                                <br>"frequently asked questions"?</a>
                             <div class="collapse" id="whatIsFAQ">
                                 <div class="card text-dark bg-light mb-3 faqCards">
                                     <div class="card-header">
@@ -447,7 +456,10 @@
                         </div>
                         <div class="col-sm-6" id="faqList">
                             <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFood" role="button" aria-expanded="false"
-                                aria-controls="whatIsFood">What's the food situation like?<br><small class="text-muted">(asking for a friend)</small></a>
+                                aria-controls="whatIsFood">What's the food situation like?
+                                <br>
+                                <small class="text-muted">(asking for a friend)</small>
+                            </a>
                             <div class="collapse" id="whatIsFood">
                                 <div class="card text-dark bg-light mb-3 faqCards">
                                     <div class="card-header">
@@ -467,6 +479,8 @@
             </div>
         </div>
     </section>
+
+    
 
     <!-- conditions -->
     <section id="terms">
@@ -552,7 +566,6 @@
     <!-- partners -->
     <section id="partners">
         <div class="container-fluid">
-
         </div>
     </section>
 
@@ -577,7 +590,8 @@
                         <p class="mb-0">
                             <strong>"</strong>Software innovation, like almost every other kind of innovation, requires the ability
                             to collaborate and share ideas with other people, and to sit down and talk with customers and
-                            get their feedback and understand their needs.<strong>"</strong>
+                            get their feedback and understand their needs.
+                            <strong>"</strong>
                         </p>
                         <footer class="blockquote-footer">Bill Gates</footer>
                     </blockquote>
@@ -650,6 +664,35 @@
             }
         }, 1000);
     </script>
+
+    <!-- scroll to top function -->
+    <script>
+        myID = document.getElementById("scroll2top");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y <= 1200) {
+        myID.className = "btn btn-warning hideButt"
+    } else {
+        myID.className = "btn btn-warning showButt"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+    </script>
+
+    <!-- elevator music-->
+    <script>
+            // Elevator script included on the page, already.
+            
+            window.onload = function() {
+              var elevator = new Elevator({
+                element: document.querySelector('#scroll2top'),
+                mainAudio: 'audio/elevator.mp3',
+                endAudio: 'audio/ping.wav' //credits go to: https://freesound.org/people/aji_/sounds/66136/
+              });
+            }
+    </script>
 </body>
 
 </html>
@@ -659,3 +702,7 @@
     <div class="w-100"></div> <!- creates new "row" ->: used to create a new "row" which would consequently lead to equal rows of columns
 
 -->
+
+<!-- reminder to self: credit elevator music to = Local Forecast - Elevator Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 3.0 License
+http://creativecommons.org/licenses/by/3.0/-->

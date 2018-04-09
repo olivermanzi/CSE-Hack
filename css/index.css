@@ -39,6 +39,24 @@ main {
     font-family: Cabin;
 }
 
+#scroll2top{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-family: Cabin;
+}
+
+#scroll2top:hover {
+    background-color: #555;
+}
+
+.hideButt {
+    opacity:0;
+}
+.showButt {
+    opacity:1;
+}
 /* ------------------------ Welcome ------------------------*/
 #header {
     background-color: white;
