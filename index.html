@@ -24,69 +24,67 @@
 </head>
 
 <body>
-  <!-- navigation bar -->
+    <!-- navigation bar -->
 
-  <nav class="sticky-top">
-      <div class="container-fluid">
-          <div class="row nav" id="navBar">
-              <div class="col-sm nav-item" id="navItem">
-                  <a class="nav-link active" href="#hack">The Hack</a>
-              </div>
-              <div class="col-sm nav-item" id="navItem">
-                  <a class="nav-link" href="#cases">The Cases</a>
-              </div>
-              <!-- <div class="col-sm nav-item" id="navItem">
-                  <a class="nav-link" href="#team">The Organizers</a>
-              </div>-->
-              <div class="col-sm nav-item" id="navItem">
-                  <a class="nav-link" href="#faq">FAQ</a>
-              </div>
-              <div class="col-sm nav-item" id="navItem">
-                  <a class="nav-link" href="#terms">Terms</a>
-              </div>
-              <div class="col-sm nav-item" id="navItem">
-                  <a class="nav-link" href="#register">Register</a>
-              </div>
-              <!--<div class="col-sm" id="navItem">
-                  <a class="nav-link" href="#partners">Our Partners</a>
-              </div>
-              <div class="col-sm" id="navItem">
-                  <a class="nav-link" href="#schedule">The Schedule</a>
-              </div>-->
-          </div>
-      </div>
-  </nav>
+    <nav class="sticky-top">
+        <div class="container-fluid" id="navBar">
+            <div class="row navbar navbar-expand-sm" role="navigation">
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navigationToggle" aria-controls="navigationToggle"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigationToggle">
+                    <div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link active" href="#hack">The Hack</a>
+                    </div>
+                    <div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link" href="#register">Register</a>
+                    </div>
+                    <div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link" href="#cases">The Cases</a>
+                    </div>
+                    <div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </div>
+                    <div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link" href="#terms">Terms</a>
+                    </div>
+
+                    <!--<div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link" href="#team">The Organizers</a>
+                    </div>
+                    <div class="col-sm" id="navItem">
+                        <a class="nav-link" href="#partners">Our Partners</a>
+                    </div>
+                    <div class="col-sm" id="navItem">
+                        <a class="nav-link" href="#schedule">The Schedule</a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- header -->
     <header>
         <div class="container-fluid" id="header">
             <div class="row">
-                <div class="col-sm-6" id="title">
+                <div class="col-sm-10 offset-sm-1" id="title">
                     <h1>CSE Hackathon 2.0</h1>
-                </div>
-                <div class="col-sm-6 countDown">
-                    <p>May 4th, 5th and 6th</p>
-                    <p id="gameDay"></p>
-                    <p>Patricia, Lindholmen</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- <div id="semLogo" class="redBorder"><h3>SEM Hack<br>2018</h3></div>
-        // I want this to stick to the top left corner of the page after the header.
-    -->
-
     <!-- register -->
     <section id="register">
         <div class="container-fluid">
             <div class="row" id="registration">
-                <div class="col-sm-6 sectionTitle" style="padding-left: 4rem;">
+                <div class="col-sm-4 offset-sm-1 sectionTitle">
                     <a href="https://goo.gl/forms/VAeEdQlZlkEUmyJ43" target="_blank" alt="registration form">
                         <h2>Register Here</h2>
                     </a>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-2 offset-sm-1">
                     <img src="img/stock/finger-point.png" alt="finger pointing">
                 </div>
             </div>
@@ -97,20 +95,14 @@
     <section id="hack">
         <div class="container-fluid">
             <div class="row">
-                <div class="sectionTitle">
+                <div class="col-sm-12 sectionTitle">
                     <h2>Welcome to this years Awesome Hackathon</h2>
                 </div>
-                <!--div class="col-sm-6 offset-sm-2 sectionText" id="hackText">
-                    <p>So often we avoid running water, and running water is a lot of fun. We can fix anything. We have all
-                        at one time or another mixed some mud. Look around, look at what we have. Beauty is everywhere, you
-                        only have to look to see it. Even the worst thing we can do here is good. Even trees need a friend.
-                        We all need friends.</p>
-                    <hr>
-                    <p>Every single thing in the world has its own personality - and it is up to you to make friends with the
-                        little rascals. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Let's make
-                        some happy little clouds in our world. Let's go up in here, and start having some fun
-                    </p>
-                </div-->
+                <div class="col-sm-12">
+                    <p id="gameDay" class="countDown red"></p>
+                    <p id="introInfo">May 4th, 5th and 6th</p>
+                    <p id="introInfo2">Patricia, Lindholmen</p>
+                </div>
             </div>
         </div>
     </section>
@@ -246,9 +238,10 @@
                 <div class="col-sm-10 offset-sm-1 sectionText" id="faqSection">
                     <div class="row">
                         <div class="col-sm-12" id="faqList">
-                            <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#whatIsHack" role="button" aria-expanded="false" aria-controls="whatIsHack">What is a hackathon?</a>
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsHack" role="button" aria-expanded="false"
+                                aria-controls="whatIsHack">What is a hackathon?</a>
                             <div class="collapse" id="whatIsHack">
-                                <div class="card text-white bg-dark mb-3 faqCards">
+                                <div class="card text-dark bg-light mb-3 faqCards">
                                     <div class="card-header">
                                         <h5 class="card-title">Hackathons in a nutshell</h5>
                                     </div>
@@ -260,16 +253,16 @@
                                         <hr>
                                         <p>Basically you will be doing:</p>
                                         <div class="row">
-                                          <div class="col-sm-6">
-                                                  <p>THIS</p>
-                                                  <iframe src="https://www.youtube.com/embed/6VakF2hZFPQ" frameborder="0" allowfullscreen>
-                                                  </iframe>
-                                          </div>
-                                          <div class="col-sm-6">
-                                              <p>NOT THIS</p>
-                                              <iframe src="https://www.youtube.com/embed/hqKafI7Amd8" frameborder="0" allowfullscreen>
-                                              </iframe>
-                                          </div>
+                                            <div class="col-sm-6">
+                                                <p>THIS</p>
+                                                <iframe src="https://www.youtube.com/embed/6VakF2hZFPQ" frameborder="0" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p>NOT THIS</p>
+                                                <iframe src="https://www.youtube.com/embed/hqKafI7Amd8" frameborder="0" allowfullscreen>
+                                                </iframe>
+                                            </div>
                                         </div>
                                         <p/>
                                         <p>The development happens throughout the entire 48 hours, but you do not need to stay
@@ -280,9 +273,10 @@
                             </div>
                         </div>
                         <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#whatIsFree" role="button" aria-expanded="false" aria-controls="whatIsFree">Is it free?</a>
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFree" role="button" aria-expanded="false"
+                                aria-controls="whatIsFree">Is it free?</a>
                             <div class="collapse" id="whatIsFree">
-                                <div class="card text-white bg-dark mb-3 faqCards">
+                                <div class="card text-dark bg-light mb-3 faqCards">
                                     <div class="card-header">
                                         <h5 class="card-title">Nothing in this world is free...</h5>
                                     </div>
@@ -296,9 +290,9 @@
                         </div>
                         <!--div class="w-100"></div>
                         <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#whatIsTeam" role="button" aria-expanded="false" aria-controls="whatIsTeam">What is this thing you call a team?</a>
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsTeam" role="button" aria-expanded="false" aria-controls="whatIsTeam">What is this thing you call a team?</a>
                             <div class="collapse" id="whatIsTeam">
-                                <div class="card text-white bg-dark mb-3 faqCards">
+                                <div class="card text-dark bg-light mb-3 faqCards">
                                     <div class="card-header">
                                         <h5 class="card-title">Team work...</h5>
                                     </div>
@@ -315,10 +309,10 @@
                             </div>
                         </div-->
                         <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#whatIsLanguage" role="button" aria-expanded="false"
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsLanguage" role="button" aria-expanded="false"
                                 aria-controls="whatIsLanguage">Do I need to speak Swedish?</a>
                             <div class="collapse" id="whatIsLanguage">
-                                <div class="card text-white bg-dark mb-3 faqCards">
+                                <div class="card text-dark bg-light mb-3 faqCards">
                                     <div class="card-header">
                                         <h5 class="card-title">Swedish? Portugues? English? Kinyarwanda? Arabic?</h5>
                                     </div>
@@ -332,27 +326,27 @@
                             </div>
                         </div>
                         <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#whatIsSleep" role="button" aria-expanded="false"
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsSleep" role="button" aria-expanded="false"
                                 aria-controls="whatIsSleep">Can I sleep at the event?</a>
                             <div class="collapse" id="whatIsSleep">
-                                <div class="card text-white bg-dark mb-3 faqCards">
+                                <div class="card text-dark bg-light mb-3 faqCards">
                                     <div class="card-header">
                                         <h5 class="card-title">Sleeping at the event...</h5>
                                     </div>
                                     <div class="card-body">
                                         <p class="card-text">
-                                            Unfortunately participants are not allowed to sleep on the venue.
-                                            We need to clear the venue before 10:00 pm, and we restart the next morning around 8:00 am.
+                                            Unfortunately participants are not allowed to sleep on the venue. We need to clear the venue before 10:00 pm, and we restart
+                                            the next morning around 8:00 am.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!--<div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#whatIsCategories" role="button" aria-expanded="false"
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsCategories" role="button" aria-expanded="false"
                                 aria-controls="whatIsCategories">Are there categories in this hackathon?</a>
                             <div class="collapse" id="whatIsCategories">
-                                <div class="card text-white bg-dark mb-3 faqCards">
+                                <div class="card text-dark bg-light mb-3 faqCards">
                                     <div class="card-header">
                                         <h5 class="card-title">The competing categories</h5>
                                     </div>
@@ -371,9 +365,10 @@
                         </div>-->
 
                         <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#whatIsFood" role="button" aria-expanded="false" aria-controls="whatIsFood">What's the food situation like? (asking for a friend)</a>
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFood" role="button" aria-expanded="false"
+                                aria-controls="whatIsFood">What's the food situation like?<br>(asking for a friend)</a>
                             <div class="collapse" id="whatIsFood">
-                                <div class="card text-white bg-dark mb-3 faqCards">
+                                <div class="card text-dark bg-light mb-3 faqCards">
                                     <div class="card-header">
                                         <h5 class="card-title">*In yoda voice*
                                             <br>IMPORTANT, food is.</h5>
@@ -387,10 +382,10 @@
                             </div>
                         </div>
                         <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#whatIsAdvice" role="button" aria-expanded="false"
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsAdvice" role="button" aria-expanded="false"
                                 aria-controls="whatIsAdvice">Is there any advice?</a>
                             <div class="collapse" id="whatIsAdvice">
-                                <div class="card text-white bg-dark mb-3 faqCards">
+                                <div class="card text-dark bg-light mb-3 faqCards">
                                     <div class="card-header">
                                         <h5 class="card-title">Tips and Tricks</h5>
                                     </div>
@@ -451,9 +446,9 @@
                             </div>
                         </div>
                         <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-dark btn-block" data-toggle="collapse" href="#whatIsFAQ" role="button" aria-expanded="false" aria-controls="whatIsFAQ">Does FAQ actually mean "frequently asked questions"?</a>
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFAQ" role="button" aria-expanded="false" aria-controls="whatIsFAQ">Does FAQ actually mean<br>"frequently asked questions"?</a>
                             <div class="collapse" id="whatIsFAQ">
-                                <div class="card text-white bg-dark mb-3 faqCards">
+                                <div class="card text-dark bg-light mb-3 faqCards">
                                     <div class="card-header">
                                         <h5 class="card-title">The meaning of FAQ</h5>
                                     </div>
