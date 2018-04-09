@@ -47,8 +47,6 @@ main {
     background-attachment: fixed;
     background-repeat: no-repeat;
     padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 5%;
 }
 
 #title h1{
@@ -392,7 +390,7 @@ main {
 /* ------------------------ hell ------------------------*/
 @media only screen and (max-width: 600px){
     #title h1{
-        font-size: 10vw;
+        font-size: 50px;
     }
     #registration a{
         padding-left: 95px;
@@ -444,8 +442,8 @@ main {
     }
     #faqList{
         font-size: 20px;
-        max-width: 95%;
-        left: 6px;
+        max-width: 90%;
+        left: 25px;
         text-align: center;
     }
     #termImportant{
