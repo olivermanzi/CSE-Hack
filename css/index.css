@@ -406,6 +406,7 @@ main {
     }
     #navItem{
         font-size: 15px;
+        /*border: .5px solid rgb(218, 218, 218);*/
     }
     .sectionTitle h2 {
         font-size: 9vw;
@@ -442,11 +443,13 @@ main {
         font-size: 20px;
     }
     #faqList{
+        font-size: 20px;
         max-width: 95%;
         left: 6px;
         text-align: center;
     }
     #termImportant{
+        font-size: 20px;
         margin: 0;
         padding: 5px 10px;
         max-width: 90%;
@@ -467,14 +470,16 @@ main {
         padding-left: 100px;
     }
     #quote strong{
-        font-size: 18px;
+        font-size: 30px;
     }
     #quote{
-        margin-top: 80px;
+        margin-top: 70px;
     }
     #quote p{
         font-size: 23px;
         max-width: 85%;
+        text-align: center;
+        padding-left: 30px;
     }
     #quote footer{
         text-align: center;
