@@ -9,7 +9,7 @@ font-family: 'Quicksand', sans-serif; <-- paragraphs
 */
 
 /*---------------------responsive------------------------*/
-/*Viewport is the browser window size. 1vw = 1% of viewport width. 
+/*Viewport is the browser window size. 1vw = 1% of viewport width.
 If the viewport is 50cm wide, 1vw is 0.5cm.*/
 
 html{
@@ -29,9 +29,9 @@ main {
 
 .sectionTitle h2{
     font-size: 6.5vw;
-    text-align: left;
-    margin-top: 5%;
-    padding: 4rem 3rem 1.5rem 4rem; 
+    text-align: center;
+    /*margin-top: 5%;*/
+    padding: 4rem 3rem 1.5rem 4rem;
 }
 
 .sectionText {
@@ -56,7 +56,10 @@ main {
     background-size: 100% auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
-} 
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
 #title h1{
     color: rgb(53, 53, 53);
@@ -64,7 +67,6 @@ main {
     font-weight: bold;
     font-size: 6vw;
     text-align: left;
-    padding-left: 10%;
 }
 
 #logo img{
@@ -80,13 +82,13 @@ main {
     font-weight: bold;
     font-size: 4vw;
     text-align: right;
-    
+    vertical-align: middle;
 }
 
 /* ------------------------ navbar ------------------------*/
 
 #navBar{
-    background-color: #454140c5;
+    background-color: #454140f5;
 }
 
 #navItem{
@@ -101,9 +103,9 @@ main {
     color:white;
     text-align: center;
     text-decoration: none;
-    padding: 14px 16px; 
+    padding: 14px 16px;
     width: 100%;
-    height:100%; 
+    height:100%;
 }
 
 #navItem a:hover{
@@ -126,6 +128,7 @@ main {
 
 #hackText{
     padding: 5vw 3vw 8vw 0;
+    vertical-align: middle;
 }
 
 #hackText p{
@@ -177,7 +180,7 @@ main {
 }
 
 #teamSection{
-    height: 20vw;   
+    height: 20vw;
 }
 
 #carouselSection {
@@ -207,7 +210,7 @@ main {
 
 #faqItems {
     height: 15vw;
-    width: 100%; 
+    width: 100%;
 }
 
 #faq h2{
@@ -301,8 +304,8 @@ main {
     text-align: center;
     color: #FF8F36;
     margin-top: 5%;
-    padding: 4rem 3rem 1.5rem 6rem; 
-    
+    padding: 4rem 3rem 1.5rem 6rem;
+
     display: inline-block;
     cursor: pointer;
     margin: .25rem .125rem;
@@ -393,6 +396,3 @@ main {
 .blueBorder{
     border: .5rem solid blue;
 }
-
-
-

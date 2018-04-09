@@ -24,66 +24,82 @@
 </head>
 
 <body>
+  <!-- navigation bar -->
+
+  <nav class="sticky-top">
+      <div class="container-fluid">
+          <div class="row nav" id="navBar">
+              <div class="col-sm nav-item" id="navItem">
+                  <a class="nav-link active" href="#hack">The Hack</a>
+              </div>
+              <div class="col-sm nav-item" id="navItem">
+                  <a class="nav-link" href="#cases">The Cases</a>
+              </div>
+              <div class="col-sm nav-item" id="navItem">
+                  <a class="nav-link" href="#team">The Organizers</a>
+              </div>
+              <div class="col-sm nav-item" id="navItem">
+                  <a class="nav-link" href="#faq">FAQ</a>
+              </div>
+              <div class="col-sm nav-item" id="navItem">
+                  <a class="nav-link" href="#terms">Terms</a>
+              </div>
+              <div class="col-sm nav-item" id="navItem">
+                  <a class="nav-link" href="#register">Register</a>
+              </div>
+              <!--<div class="col-sm" id="navItem">
+                  <a class="nav-link" href="#partners">Our Partners</a>
+              </div>
+              <div class="col-sm" id="navItem">
+                  <a class="nav-link" href="#schedule">The Schedule</a>
+              </div>-->
+          </div>
+      </div>
+  </nav>
+
     <!-- header -->
     <header>
         <div class="container-fluid" id="header">
             <div class="row">
-                <div class="col-sm-8" id="title">
+                <div class="col-sm-6" id="title">
                     <h1>CSE Hackathon 2.0</h1>
                 </div>
-            </div>
-            <div class="countDown">
-                <p id="gameDay"></p>
+                <div class="col-sm-6 countDown">
+                    <p>May 4th, 5th and 6th</p>
+                    <p id="gameDay"></p>
+                </div>
             </div>
         </div>
     </header>
-
-    <!-- navigation bar -->
-
-    <nav class="sticky-top">
-        <div class="container-fluid">
-            <div class="row nav" id="navBar">
-                <div class="col-sm nav-item" id="navItem">
-                    <a class="nav-link active" href="#hack">The Hack</a>
-                </div>
-                <div class="col-sm nav-item" id="navItem">
-                    <a class="nav-link" href="#cases">The Cases</a>
-                </div>
-                <div class="col-sm nav-item" id="navItem">
-                    <a class="nav-link" href="#team">The Organizers</a>
-                </div>
-                <div class="col-sm nav-item" id="navItem">
-                    <a class="nav-link" href="#faq">FAQ</a>
-                </div>
-                <div class="col-sm nav-item" id="navItem">
-                    <a class="nav-link" href="#terms">Terms</a>
-                </div>
-                <div class="col-sm nav-item" id="navItem">
-                    <a class="nav-link" href="#register">Register</a>
-                </div>
-                <!--<div class="col-sm" id="navItem">
-                    <a class="nav-link" href="#partners">Our Partners</a>
-                </div>
-                <div class="col-sm" id="navItem">
-                    <a class="nav-link" href="#schedule">The Schedule</a>
-                </div>-->
-            </div>
-        </div>
-    </nav>
 
     <!-- <div id="semLogo" class="redBorder"><h3>SEM Hack<br>2018</h3></div>
         // I want this to stick to the top left corner of the page after the header.
     -->
 
+    <!-- register -->
+    <section id="register">
+        <div class="container-fluid">
+            <div class="row" id="registration">
+                <div class="col-sm-6 sectionTitle" style="padding-left: 4rem;">
+                    <a href="https://docs.google.com/forms/d/1W44GCYel6_K1Xo8S3oFAhI8iICfcmWI9tq5A04mX4kg/edit" alt="registration form">
+                        <h2>Register Here</h2>
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/stock/finger-point.png" alt="finger pointing">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- intro -->
     <section id="hack">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6 sectionTitle">
+                <div class="sectionTitle">
                     <h2>Welcome to this years Awesome Hackathon</h2>
                 </div>
-                <div class="w-100"></div>
-                <div class="col-sm-8 offset-sm-2 sectionText" id="hackText">
+                <!--div class="col-sm-6 offset-sm-2 sectionText" id="hackText">
                     <p>So often we avoid running water, and running water is a lot of fun. We can fix anything. We have all
                         at one time or another mixed some mud. Look around, look at what we have. Beauty is everywhere, you
                         only have to look to see it. Even the worst thing we can do here is good. Even trees need a friend.
@@ -93,7 +109,7 @@
                         little rascals. Van Dyke Brown is a very nice brown, it's almost like a chocolate brown. Let's make
                         some happy little clouds in our world. Let's go up in here, and start having some fun
                     </p>
-                </div>
+                </div-->
             </div>
         </div>
     </section>
@@ -108,13 +124,13 @@
                         <small>(no spoilers)&#42;</small>
                     </h2>
                 </div>
-                <div class="w-100"></div>
-                <div class="col-sm-8 offset-sm-2 sectionText" id="caseList">
+                <div class="col-sm-6 sectionText" id="caseList">
                     <ul>
                         <li>Health</li>
                         <li>Society</li>
                         <li>Innovation</li>
                     </ul>
+                    <small>Updated throughout April</small>
                 </div>
             </div>
         </div>
@@ -128,24 +144,6 @@
                     <!-- team header-->
                     <div class="sectionTitle">
                         <h2>The Organizers</h2>
-                    </div>
-                </div>
-                <div class="w-100"></div>
-                <div class="col-sm-8 offset-sm-2">
-                    <div class="sectionText" id="teamTextInfo">
-                        <p>I guess I'm a little weird. I like to talk to trees and animals. That's okay though; I have more
-                            fun than most people. Now let's put some happy little clouds in here. You're meant to have fun
-                            in life. We don't really know where this goes - and I'm not sure we really care. We'll do another
-                            happy little painting.
-                        </p>
-                        <hr>
-                        <p>Use absolutely no pressure. Just like an angel's wing. There comes a nice little fluffer. Imagination
-                            is the key to painting. La- da- da- da- dah. Just be happy. Only God can make a tree - but you
-                            can paint one.</p>
-                        <hr>
-                        <p>You've got to learn to fight the temptation to resist these things. Just let them happen. Only think
-                            about one thing at a time. Don't get greedy. Isn't that fantastic that you can create an almighty
-                            tree that fast?</p>
                     </div>
                 </div>
             </div>
@@ -590,22 +588,6 @@
         </div>
     </section>
 
-    <!-- register -->
-    <section id="register">
-        <div class="container-fluid">
-            <div class="row" id="registration">
-                <div class="col-sm-6 sectionTitle" style="padding-left: 4rem;">
-                    <a href="https://docs.google.com/forms/d/1W44GCYel6_K1Xo8S3oFAhI8iICfcmWI9tq5A04mX4kg/edit" alt="registration form">
-                        <h2>Register Here</h2>
-                    </a>
-                </div>
-                <div class="col-sm-6">
-                    <img src="img/stock/finger-point.png" alt="finger pointing">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- partners -->
     <section id="partners">
         <div class="container-fluid">
@@ -701,7 +683,7 @@
             document.getElementById("gameDay").innerHTML = days + "d " + hours + "h "
                 + minutes + "m " + seconds + "s ";
 
-            // If the count down is finished, write some text 
+            // If the count down is finished, write some text
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("gameDay").innerHTML = "EXPIRED";
@@ -715,5 +697,5 @@
 <!--
     faq section:
     <div class="w-100"></div> <!- creates new "row" ->: used to create a new "row" which would consequently lead to equal rows of columns
-    
+
 -->
