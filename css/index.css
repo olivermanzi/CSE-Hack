@@ -293,8 +293,8 @@ main {
     padding: 2rem 0;
 }
 
-#termList strong{
-    color: rgb(139, 47, 47);
+#termList ol strong{
+    color: rgb(241, 81, 81);
 }
 
 /* --------- register --------- */
