@@ -293,6 +293,10 @@ main {
     padding: 2rem 0;
 }
 
+#termList strong{
+    color: rgb(139, 47, 47);
+}
+
 /* --------- register --------- */
 #register{
     background-color: white;
