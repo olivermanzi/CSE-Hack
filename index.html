@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CSE-Web</title>
+    <title>CSE Hackathon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css link -->
@@ -52,7 +52,6 @@
                     <div class="col-sm nav-item" id="navItem">
                         <a class="nav-link" href="#terms">Terms</a>
                     </div>
-
                     <!--<div class="col-sm nav-item" id="navItem">
                         <a class="nav-link" href="#team">The Organizers</a>
                     </div>
@@ -296,26 +295,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!--div class="w-100"></div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsTeam" role="button" aria-expanded="false" aria-controls="whatIsTeam">What is this thing you call a team?</a>
-                            <div class="collapse" id="whatIsTeam">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Team work...</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text red">
-                                            Use your imagination, let it go. That's what painting is all about. It should make you feel good when you paint. How do you
-                                            make a round circle with a square knife? That's your challenge for the day. This
-                                            painting comes right out of your heart. That's what makes life fun. That you
-                                            can make these decisions. That you can create the world that you want. I like
-                                            to beat the brush.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div-->
                         <div class="col-sm-6" id="faqList">
                             <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsLanguage" role="button" aria-expanded="false"
                                 aria-controls="whatIsLanguage">Do I need to speak Swedish?</a>
@@ -350,27 +329,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsCategories" role="button" aria-expanded="false"
-                                aria-controls="whatIsCategories">Are there categories in this hackathon?</a>
-                            <div class="collapse" id="whatIsCategories">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">The competing categories</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text red">
-                                            Let's make some happy little clouds in our world. Work on one thing at a time. Don't get carried away - we have plenty of
-                                            time. Let's make some happy little clouds in our world. Volunteering your time;
-                                            it pays you and your whole community fantastic dividends. There is no right or
-                                            wrong - as long as it makes you happy and doesn't hurt anyone. You're meant to
-                                            have fun in life.
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
                         <div class="col-sm-6" id="faqList">
                             <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsAdvice" role="button" aria-expanded="false"
                                 aria-controls="whatIsAdvice">Is there any advice?</a>
@@ -614,13 +572,17 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
     <!-- bootstrap template requirements -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+
 
     <!-- google maps api -->
     <script>
@@ -665,7 +627,26 @@
             }
         }, 1000);
     </script>
+    <script type="text/javascript">
+          $("#navItem a[href^='#']").on('click', function(e) {
+           // prevent default anchor click behavior
+           e.preventDefault();
 
+           // store hash
+           var hash = this.hash;
+
+           // animate
+           $('html, body').animate({
+               scrollTop: $(hash).offset().top
+             }, 400, function(){
+
+               // when done, add hash to url
+               // (default click behaviour)
+               window.location.hash = hash;
+             });
+
+            });
+            </script>
     <!-- scroll to top function -->
     <script>
         myID = document.getElementById("scroll2top");
