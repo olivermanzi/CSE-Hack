@@ -189,35 +189,77 @@ main {
     color: white;
 }
 
+#teamText {
+    width: 100%;
+}
+
 #teamText h2 {
     font-family: Bungee Inline;
+    /*margin-left: 20%;*/
+    text-align: center;
 }
 
 #teamTextInfo{
     text-align: left;
-    width: 85%;
+    width: 80%;
     padding: 5vw 3vw 8vw 0;
 }
 
 #teamSection{
-    height: 20vw;
+    height: 30vw;
+    max-width: 40%;
+    margin: 7% auto 0 auto;
 }
 
-#carouselSection {
-    max-width: 85%;
-    margin: 10% 2.5%;
-    padding-left: 10%;
+#teamSection a {
+    height: 15vw;
+}
+
+#carouselSection, #teamPic {
+    height: 23vw;
 }
 
 #teamPic img {
     max-width: auto;
-    height: 10vw;
+    height: 15vw;
     border-radius: 50%;
+    margin: auto;
+    margin-top: auto;
 }
 
 #teamPicNames {
     font-weight: bold;
     color: #4b4b4b;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .d-none {
+        display: block !important;
+    }
+
+}
+
+@media(max-width:767px) {
+
+    #teamPic {
+        height: auto;
+    }
+
+    #carouselSection {
+        height: 100%;
+    }
+
+    .d-none {
+        display: block !important;
+        position: relative;
+        text-align: center;
+        left:3%;
+        font-size: 0.5em;
+    }
+
+
 }
 
 /* --------- faq --------- */
