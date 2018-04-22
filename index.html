@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- typing effect for title -->
+    <script type="application/javascript" src="js/typed.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <!-- http://www.bobrosslipsum.com -->
 
@@ -66,13 +72,29 @@
         </div>
     </nav>
 
-
+                    
+    
     <!-- header -->
     <header>
+        
         <div class="container" id="header">
             <div class="row">
-                <div class="col-sm-10 offset-sm-1" id="title">
-                    <h1>CSE Hackathon 2.0</h1>
+                <div id="title">
+                    <span id="typed"></span>
+                    <script type="application/javascript">
+                        var typed = new Typed('#typed', {
+                            strings: ['CSE@Hackthon> 2018'],
+                            typeSpeed: 0,
+                            backSpeed: 0,
+                            cursorChar: '▮',
+                            shuffle: true,
+                            smartBackspace: false,
+                            loop: false
+                        });
+                    </script>
+                    <style>
+                         
+                    </style>
                 </div>
             </div>
         </div>

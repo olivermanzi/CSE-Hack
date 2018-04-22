@@ -68,11 +68,11 @@ main {
 }
 
 #title h1{
-    color: rgb(53, 53, 53);
+    /**color: rgb(53, 53, 53);
     font-family: Bungee Shade;
     font-weight: bold;
     font-size: 8vw;
-    text-align: center;
+    text-align: center;*/
 }
 
 #logo img{
@@ -538,4 +538,33 @@ main {
 
 .text-muted{
     color: #ababab!important;
+}
+#typed {
+    font-size: 45px;
+}
+
+.typed-cursor {
+    font-size: 45px;
+    opacity: 1;
+    -webkit-animation: blinker 1.2s linear infinite;
+    animation: blinker 1.2s linear infinite;
+}
+
+@-webkit-keyframes blinker {
+    50% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+#title {
+    text-align: center;
+    width: 100%;
 }
