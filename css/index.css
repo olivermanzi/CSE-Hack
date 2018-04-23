@@ -226,6 +226,7 @@ main {
 
 .slide-content{
     width: 33%;
+    padding: 10px;
 }
 
 .img-desc{
@@ -235,11 +236,10 @@ main {
 
 #teamPic img {
     max-width: auto;
-    height: 15vw;
     border-radius: 50%;
     margin: auto;
     margin-top: auto;
-    width: 240px;
+    height: 15vw;
     object-fit: cover;
 }
 
