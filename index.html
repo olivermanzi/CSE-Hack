@@ -7,16 +7,13 @@
     <title>CSE Hackathon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css link -->
-    <link href="css/index.css" rel="stylesheet" type="text/css">
-
     <!-- google font api -->
     <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade|Cabin|Quicksand"
-        rel="stylesheet">
+    rel="stylesheet">
 
     <!-- bootstrap api -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- typing effect for title -->
@@ -24,6 +21,9 @@
     
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- css link -->
+    <link href="css/index.css" rel="stylesheet" type="text/css">
 
     <!-- http://www.bobrosslipsum.com -->
 
@@ -39,8 +39,8 @@
         <div class="container-fluid" id="navBar">
             <div class="row navbar navbar-expand-sm" role="navigation">
                 <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navigationToggle" aria-controls="navigationToggle"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navigationToggle">
                     <div class="col-sm nav-item" id="navItem">
@@ -53,18 +53,18 @@
                         <a class="nav-link" href="#cases">The Cases</a>
                     </div>
                     <div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link" href="#team">The Organizers</a>
+                    </div>
+                    <div class="col-sm nav-item" id="navItem">
                         <a class="nav-link" href="#faq">FAQ</a>
                     </div>
                     <div class="col-sm nav-item" id="navItem">
                         <a class="nav-link" href="#terms">Terms</a>
                     </div>
-                    <!--<div class="col-sm nav-item" id="navItem">
-                        <a class="nav-link" href="#team">The Organizers</a>
-                    </div>
                     <div class="col-sm" id="navItem">
                         <a class="nav-link" href="#partners">Our Partners</a>
                     </div>
-                    <div class="col-sm" id="navItem">
+                    <!--<div class="col-sm" id="navItem">
                         <a class="nav-link" href="#schedule">The Schedule</a>
                     </div>-->
                 </div>
@@ -160,7 +160,7 @@
 
     <!-- organizers -->
     <section id="team">
-        <!--<div class="container-fluid">
+        <div class="container-fluid">
             <div class="row">
                 <div id="teamText">
                     <div class="sectionTitle">
@@ -170,74 +170,60 @@
             </div>
             <div class="row">
                 <div class="col-sm-10 offset-sm-1">
-                    <div class="carousel slide" data-ride="carousel" id="teamSection">
-                        <ol class="carousel-indicators">
-                            <li data-target="#teamSection" data-slide-to="0" class="active"></li>
-                            <li data-target="#teamSection" data-slide-to="1"></li>
-                            <li data-target="#teamSection" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner" id="carouselSection">
+                    <div id="teamSection" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox" id="carouselSection">
                             <div class="carousel-item active" id="teamPic">
-                                <div class="row">
-                                    <div class="col-sm">
-                                        <img src="img/team/Francisco.png" alt="organizer <insert name>" class="img-thumbnail">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Organizer Name</h5>
-                                                <p>Organizer Title</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm">
-                                        <img src="img/team/Anneli.gif" alt="organizer <insert name>" class="img-thumbnail">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Organizer Name</h5>
-                                                <p>...</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm">
-                                        <img src="img/team/Suzana.jpg" alt="organizer <insert name>" class="img-thumbnail">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Organizer Name</h5>
-                                                <p>...</p>
-                                        </div>
-                                    </div>
+                                <img class="d-block img-fluid" src="img/team/Francisco.png" alt="First slide" />
+                                <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                    <h5>Francisco Gomes</h5>
                                 </div>
                             </div>
                             <div class="carousel-item" id="teamPic">
-                                <div class="row">
-                                    <div class="col-sm">
-                                        <img src="img/team/Daiva.jpg" alt="organizer <insert name>" class="img-thumbnail">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Organizer Name</h5>
-                                                <p>...</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm">
-                                        <img src="img/team/Dimitris.jpg" alt="organizer <insert name>" class="img-thumbnail">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Organizer Name</h5>
-                                                <p>...</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm">
-                                        <img src="img/team/Simon.png" alt="organizer <insert name>" class="img-thumbnail">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Organizer Name</h5>
-                                                <p>...</p>
-                                        </div>
-                                    </div>
+                                <img class="d-block img-fluid" src="img/team/Anneli.jpg" alt="Second slide"/>
+                                <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                    <h5>Anneli</h5>
                                 </div>
                             </div>
                             <div class="carousel-item" id="teamPic">
-                                <div class="row">
-                                    <div class="col-sm">
-                                        <img src="img/stock/typer.jpg" alt="organizer <insert name>" class="img-thumbnail">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Organizer Name</h5>
-                                                <p>...</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm"></div>
-                                    <div class="col-sm"></div>
+                                <img class="d-block img-fluid" src="img/team/Suzana.jpg" alt="Third slide"/>
+                                <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                    <h5>Suzana</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="teamPic">
+                                <img class="d-block img-fluid" src="img/team/Dimitris.jpg" alt="Third slide"/>
+                                <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                    <h5>Dimitris</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="teamPic">
+                                <img class="d-block img-fluid" src="img/team/Imed.jpeg" alt="Third slide"/>
+                                <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                    <h5>Imed</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="teamPic">
+                                <img class="d-block img-fluid" src="img/team/samer.jpg" alt="Third slide"/>
+                                <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                    <h5>Samer</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="teamPic">
+                                <img class="d-block img-fluid" src="img/team/felipe.jpg" alt="Third slide"/>
+                                <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                    <h5>Felipe</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="teamPic">
+                                <img class="d-block img-fluid" src="img/team/Daiva.jpg" alt="Third slide"/>
+                                <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                    <h5>Daiva</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" id="teamPic">
+                                <img class="d-block img-fluid" src="img/team/marko.jpg" alt="Third slide"/>
+                                <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                    <h5>Marko</h5>
                                 </div>
                             </div>
                         </div>
@@ -252,130 +238,131 @@
                     </div>
                 </div>
             </div>
-        </div>-->
-    </section>
+        </div>
+    </div>
+</section>
 
-    <!-- faq -->
-    <section id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="sectionTitle">
-                    <h2>Frequently asked Questions</h2>
-                </div>
+<!-- faq -->
+<section id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="sectionTitle">
+                <h2>Frequently asked Questions</h2>
             </div>
-            <div class="row">
-                <div class="col-sm-10 offset-sm-1 sectionText" id="faqSection">
-                    <div class="row">
-                        <div class="col-sm-12" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsHack" role="button" aria-expanded="false"
-                                aria-controls="whatIsHack">What is a hackathon?</a>
-                            <div class="collapse" id="whatIsHack">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Hackathons in a nutshell</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p>The Hackathon is a
-                                            <hlt>48 hour</hlt> (non-stop) event where groups of students engage in creative and
-                                            development activities related to application development. The goal is to hack
-                                            data openly available in the Internet and then create an app using the data.</p>
-                                        <hr>
-                                        <p>Basically you will be doing:</p>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <p>THIS</p>
-                                                <iframe src="https://www.youtube.com/embed/6VakF2hZFPQ" frameborder="0" allowfullscreen>
-                                                </iframe>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <p>NOT THIS</p>
-                                                <iframe src="https://www.youtube.com/embed/hqKafI7Amd8" frameborder="0" allowfullscreen>
-                                                </iframe>
-                                            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 offset-sm-1 sectionText" id="faqSection">
+                <div class="row">
+                    <div class="col-sm-12" id="faqList">
+                        <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsHack" role="button" aria-expanded="false"
+                        aria-controls="whatIsHack">What is a hackathon?</a>
+                        <div class="collapse" id="whatIsHack">
+                            <div class="card text-dark bg-light mb-3 faqCards">
+                                <div class="card-header">
+                                    <h5 class="card-title">Hackathons in a nutshell</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>The Hackathon is a
+                                        <hlt>48 hour</hlt> (non-stop) event where groups of students engage in creative and
+                                        development activities related to application development. The goal is to hack
+                                    data openly available in the Internet and then create an app using the data.</p>
+                                    <hr>
+                                    <p>Basically you will be doing:</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>THIS</p>
+                                            <iframe src="https://www.youtube.com/embed/6VakF2hZFPQ" frameborder="0" allowfullscreen>
+                                            </iframe>
                                         </div>
-                                        <p/>
-                                        <p>The development happens throughout the entire 48 hours, but you do not need to stay
-                                            there the whole time... your competitor might. ;) </p>
+                                        <div class="col-sm-6">
+                                            <p>NOT THIS</p>
+                                            <iframe src="https://www.youtube.com/embed/hqKafI7Amd8" frameborder="0" allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                    <p/>
+                                    <p>The development happens throughout the entire 48 hours, but you do not need to stay
+                                    there the whole time... your competitor might. ;) </p>
 
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFree" role="button" aria-expanded="false"
-                                aria-controls="whatIsFree">Is it free?</a>
-                            <div class="collapse" id="whatIsFree">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Nothing in this world is free...</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            but the CSE Hackathon 2.0 is absolutely free!
-                                        </p>
-                                    </div>
+                    </div>
+                    <div class="col-sm-6" id="faqList">
+                        <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFree" role="button" aria-expanded="false"
+                        aria-controls="whatIsFree">Is it free?</a>
+                        <div class="collapse" id="whatIsFree">
+                            <div class="card text-dark bg-light mb-3 faqCards">
+                                <div class="card-header">
+                                    <h5 class="card-title">Nothing in this world is free...</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        but the CSE Hackathon 2.0 is absolutely free!
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsLanguage" role="button" aria-expanded="false"
-                                aria-controls="whatIsLanguage">Do I need to speak Swedish?</a>
-                            <div class="collapse" id="whatIsLanguage">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Swedish? Portugues? English? Kinyarwanda? Arabic?</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            You can speak whatever language you want within your team however, presentations will be done in english... and so will most
-                                            of the mingling.
-                                        </p>
-                                    </div>
+                    </div>
+                    <div class="col-sm-6" id="faqList">
+                        <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsLanguage" role="button" aria-expanded="false"
+                        aria-controls="whatIsLanguage">Do I need to speak Swedish?</a>
+                        <div class="collapse" id="whatIsLanguage">
+                            <div class="card text-dark bg-light mb-3 faqCards">
+                                <div class="card-header">
+                                    <h5 class="card-title">Swedish? Portugues? English? Kinyarwanda? Arabic?</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        You can speak whatever language you want within your team however, presentations will be done in english... and so will most
+                                        of the mingling.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsSleep" role="button" aria-expanded="false"
-                                aria-controls="whatIsSleep">Can I sleep at the event?</a>
-                            <div class="collapse" id="whatIsSleep">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Sleeping at the event...</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            Unfortunately participants are not allowed to sleep on the venue. We need to clear the venue before 10:00 pm, and we restart
-                                            the next morning around 8:00 am.
-                                        </p>
-                                    </div>
+                    </div>
+                    <div class="col-sm-6" id="faqList">
+                        <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsSleep" role="button" aria-expanded="false"
+                        aria-controls="whatIsSleep">Can I sleep at the event?</a>
+                        <div class="collapse" id="whatIsSleep">
+                            <div class="card text-dark bg-light mb-3 faqCards">
+                                <div class="card-header">
+                                    <h5 class="card-title">Sleeping at the event...</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Unfortunately participants are not allowed to sleep on the venue. We need to clear the venue before 10:00 pm, and we restart
+                                        the next morning around 8:00 am.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsAdvice" role="button" aria-expanded="false"
-                                aria-controls="whatIsAdvice">Is there any advice?</a>
-                            <div class="collapse" id="whatIsAdvice">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Tips and Tricks</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-text">
-                                            <p>There is no
-                                                <hlt>I</hlt> in
-                                                <hlt>TEAM</hlt>. So, remember to build a good team with a variety of expertise
-                                                so everyone can share and learn from one another.</p>
-                                            <p>Being friendly (not FRIENDS) is essencial for collaboration in a Hackathon. Especially
-                                                among different teams. Remember, everyone is in the same boat: sink or swim.</p>
-                                            <hr>
-                                            <p>You
-                                                <hlt>can come with a team</hlt> of yours or meet people and
-                                                <hlt>join/form teams</hlt> in our brainstorming evening. Remember that
-                                                <hlt>they have to be CSE students</hlt>.</p>
+                    </div>
+                    <div class="col-sm-6" id="faqList">
+                        <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsAdvice" role="button" aria-expanded="false"
+                        aria-controls="whatIsAdvice">Is there any advice?</a>
+                        <div class="collapse" id="whatIsAdvice">
+                            <div class="card text-dark bg-light mb-3 faqCards">
+                                <div class="card-header">
+                                    <h5 class="card-title">Tips and Tricks</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-text">
+                                        <p>There is no
+                                            <hlt>I</hlt> in
+                                            <hlt>TEAM</hlt>. So, remember to build a good team with a variety of expertise
+                                        so everyone can share and learn from one another.</p>
+                                        <p>Being friendly (not FRIENDS) is essencial for collaboration in a Hackathon. Especially
+                                        among different teams. Remember, everyone is in the same boat: sink or swim.</p>
+                                        <hr>
+                                        <p>You
+                                            <hlt>can come with a team</hlt> of yours or meet people and
+                                            <hlt>join/form teams</hlt> in our brainstorming evening. Remember that
+                                            <hlt>they have to be CSE students</hlt>.</p>
                                             <hr>
                                             <p>
                                                 <hlt>Delegating tasks</hlt> is important. Explore everyone's unique capabilities:
-                                                Divide and conquer!</p>
+                                            Divide and conquer!</p>
                                             <p>Try to assign different responsibilities, for instance:</p>
                                             <ul>
                                                 <li>
@@ -392,7 +379,7 @@
                                                 <li>
                                                     <p>
                                                         <hlt>Dev. Process</hlt>: Using tools (git, APIs, etc.) properly, track
-                                                        time and goals, talk with organization,...</p>
+                                                    time and goals, talk with organization,...</p>
                                                 </li>
                                             </ul>
                                             <hr>
@@ -406,218 +393,260 @@
                                                 <a href="http://lmgtfy.com/?q=how+to+win+a+hackathon" target="_blank">
                                                     <hlt>simply do this</hlt>
                                                 </a>.</p>
-                                            <p>
-                                                <hlt>Above all</hlt>: Be fun, creative and learn lots of new stuff (technical
+                                                <p>
+                                                    <hlt>Above all</hlt>: Be fun, creative and learn lots of new stuff (technical
                                                 and personal).</p>
-                                            <hr>
+                                                <hr>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFAQ" role="button" aria-expanded="false" aria-controls="whatIsFAQ">Does FAQ actually mean
-                                <br>"frequently asked questions"?</a>
-                            <div class="collapse" id="whatIsFAQ">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">The meaning of FAQ</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            Accodring to the
-                                            <a href="https://en.oxforddictionaries.com/definition/faq" alt="link to definition of FAQ">Oxford Dictionary</a>, FAQ is described as a list of questions and answers relating
-                                            to a particular subject, especially one giving basic information for users of
-                                            a website.
-                                        </p>
+                            <div class="col-sm-6" id="faqList">
+                                <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFAQ" role="button" aria-expanded="false" aria-controls="whatIsFAQ">Does FAQ actually mean
+                                    <br>"frequently asked questions"?</a>
+                                    <div class="collapse" id="whatIsFAQ">
+                                        <div class="card text-dark bg-light mb-3 faqCards">
+                                            <div class="card-header">
+                                                <h5 class="card-title">The meaning of FAQ</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    Accodring to the
+                                                    <a href="https://en.oxforddictionaries.com/definition/faq" alt="link to definition of FAQ">Oxford Dictionary</a>, FAQ is described as a list of questions and answers relating
+                                                    to a particular subject, especially one giving basic information for users of
+                                                    a website.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFood" role="button" aria-expanded="false"
-                                aria-controls="whatIsFood">What's the food situation like?
-                                <br>
-                                <small class="text-muted">(asking for a friend)</small>
-                            </a>
-                            <div class="collapse" id="whatIsFood">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">*In yoda voice*
-                                            <br>IMPORTANT, food is.</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            Food will be provided by the organizers. You will be stuffed with pizza, candy and red bull until you tap out.
-                                        </p>
+                                <div class="col-sm-6" id="faqList">
+                                    <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFood" role="button" aria-expanded="false"
+                                    aria-controls="whatIsFood">What's the food situation like?
+                                    <br>
+                                    <small class="text-muted">(asking for a friend)</small>
+                                </a>
+                                <div class="collapse" id="whatIsFood">
+                                    <div class="card text-dark bg-light mb-3 faqCards">
+                                        <div class="card-header">
+                                            <h5 class="card-title">*In yoda voice*
+                                                <br>IMPORTANT, food is.</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    Food will be provided by the organizers. You will be stuffed with pizza, candy and red bull until you tap out.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
 
 
-    <!-- conditions -->
-    <section id="terms">
-        <div class="container">
-            <div class="row">
-                <div class="sectionTitle red">
-                    <h2>Terms of Conduct</h2>
+            <!-- conditions -->
+            <section id="terms">
+                <div class="container">
+                    <div class="row">
+                        <div class="sectionTitle red">
+                            <h2>Terms of Conduct</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 offset-sm-2 sectionText" id="termImportant">
+                            <p>
+                                <strong class="red">IMPORTANT:</strong> By registering your participation you agree to the terms and conditions presented
+                                below.
+                                This Computer &amp; Software Engineering (CSE) Hackathon follows the academic moral, ethics and decency standards. Responsible behaviour is
+                                expected. Read below the details of the terms and conditions to participate in the event.
+                            </p>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2 sectionText" id="termList">
+                        <ol>
+                            <li class="red">
+                                Code of conduct:
+                            </li>
+                            <ul>
+                                <li>Participants shall refrain from creating any content that could be considered illegal and/or
+                                    obscene, offensive, defamatory, indecent, pornographic, unsuitable, racist, xenophobic or
+                                    in any other way objectionable in line with general moral standards and/or according to the
+                                    decision of the CSE Hackathon Organization Committee or that would/could damage the reputation
+                                    of Chalmers and the University of Gothenburg.</li>
+                                <li>Participants shall refrain from accessing, storing (saving) and sending content or data with
+                                    illegal, copyright-infringing, sexist, racist, offensive or otherwise objectionable ideologies.</li>
+                                <li>Participants shall comply with the house rules in force at the event location as well as any
+                                    instructions given by the organizers on location, and shall neither enter nor use any rooms,
+                                    installations or systems at the event location that are not intended to be used as part of
+                                    the event.</li>
+                                <li>Participants assume responsibility for any damage they cause to the premises, installations and
+                                    systems at the event location. In this respect and to the extent permitted by law, the CSE
+                                    Hackathon organization committee declines all liability.</li>
+                            </ul>
+                            <hr>
+                            <li class="red">
+                                Participation:
+                            </li>
+                            <ul>
+                            <li>Participants need to register before deadline of <strong>April 30, 2018</strong>. However, the registration follows
+                                a first come, first served principle. When the maximum number of participants is reached,
+                                the registration page will reflect that new registrations are marked as reserves.</li>
+                                <li>Only students enrolled in the Bachelor Programmes from the University of Gothenburg are allowed to register and compete in the event.</li>
+                                <li>Teams will have at least 4 participants. Individuals can only participate in one team. The entire
+                                    team shall be present at the hackathon, with the exception of force majeure.</li>
+                                <li>Participants will need to bring their own computers, mobile phones and any other devices with
+                                    the necessary software.</li>
+                            </ul>
+                            <hr>
+                            <li class="red">
+                                Your creation(s):
+                            </li>
+                            <ul>
+                                <li>Participants are allowed to reuse their own code and libraries, but the competing project has
+                                    to be new and created during the CSE Hackathon.</li>
+                                <li>Participants are prepared to present the results of their work at the end of the CSE Hackathon.</li>
+                                <li>Participants must clearly reference all sources/source materials when presenting the results.</li>
+                                <li>At the end of the hackathon, participants must describe what was developed during the hackathon.</li>
+                                <li>Participants are the owner of their creations. By participating at the hackathon the research
+                                    projects at the Computer Science and Engineering Department at Chalmers and the University of Gothenburg
+                                    are granted the right of using your application for research, but not commercial, purposes.
+                                    Research use could include testing the application with a large user group, or investigating
+                                    its effect on learning and explore further improvements of its core concept.</li>
+                                <li>Participants understand and acknowledge that the CSE Hackathon Organization Committee may have
+                                    developed or commissioned, or may develop in the future, materials similar to the participants’
+                                    work. Participants waive any and all claims they may have resulting from any similarities
+                                    between their creations and any such materials.</li>
+                            </ul>
+                        </ol>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-8 offset-sm-2 sectionText" id="termImportant">
-                    <p>
-                        <strong class="red">IMPORTANT:</strong> By registering your participation you agree to the terms and conditions presented
-                        below.
-                        <hr> This Computer & Software Engineering (CSE) Hackathon follows the academic moral, ethics and decency standards. Responsible behaviour is
-                        expected. Read below the details of the terms and conditions to participate in the event.
-                    </p>
+        </section>
+
+            <!-- partners -->
+            <section id="partners">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div id="partnerText">
+                            <div class="sectionTitle">
+                                <h2>The Partners</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-10 offset-sm-1">
+                            <div id="partnerSection" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox" id="carouselSection">
+                                    <div class="carousel-item active" id="partnerPic">
+                                        <img class="d-block img-fluid" src="img/partners/VGReg.jpg" alt="First slide" />
+                                        <!--<div class="carousel-caption d-none d-md-block" id="picCaption">
+                                            <h5>Francisco Gomes</h5>
+                                        </div>-->
+                                    </div>
+                                    <div class="carousel-item" id="teamPic">
+                                        <img class="d-block img-fluid" src="img/team/img.jpg" alt="Second slide"/>
+                                        <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                            <h5>Anneli</h5>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" id="teamPic">
+                                        <img class="d-block img-fluid" src="img/team/img.jpg" alt="Third slide"/>
+                                        <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                            <h5>Suzana</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#partnerSection" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#partnerSection" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- footer -->
+        <footer id="foot">
+            <div class="container-fluid footerContent">
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1">
+                        <!-- google maps -->
+                        <div id="map" class="location"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- association -->
+                    <div class="col-sm-3 offset-sm-1" id="department">
+                        <img src="img/cse/cgu.png" alt="Gothenburg University and Chalmers University of Technology">
+                    </div>
+                    <!-- hackathon mission -->
+                    <div class="col-sm-4 offset-sm-3" id="quote">
+                        <blockquote class="blockquote text-right">
+                            <p class="mb-0">
+                                <strong>"</strong>Software innovation, like almost every other kind of innovation, requires the ability
+                                to collaborate and share ideas with other people, and to sit down and talk with customers and
+                                get their feedback and understand their needs.
+                                <strong>"</strong>
+                            </p>
+                            <footer class="blockquote-footer">Bill Gates</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- social media -->
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-8 offset-sm-2 sectionText" id="termList">
-                    <ol>
-                        <li class="red">
-                            Code of conduct:
-                        </li>
-                        <ul>
-                            <li>Participants shall refrain from creating any content that could be considered illegal and/or
-                                obscene, offensive, defamatory, indecent, pornographic, unsuitable, racist, xenophobic or
-                                in any other way objectionable in line with general moral standards and/or according to the
-                                decision of the CSE Hackathon Organization Committee or that would/could damage the reputation
-                                of Chalmers and the University of Gothenburg.</li>
-                            <li>Participants shall refrain from accessing, storing (saving) and sending content or data with
-                                illegal, copyright-infringing, sexist, racist, offensive or otherwise objectionable ideologies.</li>
-                            <li>Participants shall comply with the house rules in force at the event location as well as any
-                                instructions given by the organizers on location, and shall neither enter nor use any rooms,
-                                installations or systems at the event location that are not intended to be used as part of
-                                the event.</li>
-                            <li>Participants assume responsibility for any damage they cause to the premises, installations and
-                                systems at the event location. In this respect and to the extent permitted by law, the CSE
-                                Hackathon organization committee declines all liability.</li>
-                        </ul>
-                        <hr>
-                        <li class="red">
-                            Participation:
-                        </li>
-                        <ul>
-                        <li>Participants need to register before deadline of <strong>April 30, 2018</strong>. However, the registration follows
-                            a first come, first served principle. When the maximum number of participants is reached,
-                            the registration page will reflect that new registrations are marked as reserves.</li>
-                            <li>Only students enrolled in the Bachelor Programmes from the University of Gothenburg are allowed to register and compete in the event.</li>
-                            <li>Teams will have at least 4 participants. Individuals can only participate in one team. The entire
-                                team shall be present at the hackathon, with the exception of force majeure.</li>
-                            <li>Participants will need to bring their own computers, mobile phones and any other devices with
-                                the necessary software.</li>
-                        </ul>
-                        <hr>
-                        <li class="red">
-                            Your creation(s):
-                        </li>
-                        <ul>
-                            <li>Participants are allowed to reuse their own code and libraries, but the competing project has
-                                to be new and created during the CSE Hackathon.</li>
-                            <li>Participants are prepared to present the results of their work at the end of the CSE Hackathon.</li>
-                            <li>Participants must clearly reference all sources/source materials when presenting the results.</li>
-                            <li>At the end of the hackathon, participants must describe what was developed during the hackathon.</li>
-                            <li>Participants are the owner of their creations. By participating at the hackathon the research
-                                projects at the Computer Science and Engineering Department at Chalmers and the University of Gothenburg
-                                are granted the right of using your application for research, but not commercial, purposes.
-                                Research use could include testing the application with a large user group, or investigating
-                                its effect on learning and explore further improvements of its core concept.</li>
-                            <li>Participants understand and acknowledge that the CSE Hackathon Organization Committee may have
-                                developed or commissioned, or may develop in the future, materials similar to the participants’
-                                work. Participants waive any and all claims they may have resulting from any similarities
-                                between their creations and any such materials.</li>
-                        </ul>
-                    </ol>
+            <div class="container-fluid">
+                <div class="row" id="copyRight">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <p>Copyright &copy; SE Division 2018</p>
+                    </div>
+                    <div class="col-sm-3"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <!-- partners -->
-    <section id="partners">
-        <div class="container-fluid">
-        </div>
-    </section>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-    <!-- footer -->
-    <footer id="foot">
-        <div class="container-fluid footerContent">
-            <div class="row">
-                <div class="col-sm-10 offset-sm-1">
-                    <!-- google maps -->
-                    <div id="map" class="location"></div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- association -->
-                <div class="col-sm-3 offset-sm-1" id="department">
-                    <img src="img/cse/cgu.png" alt="Gothenburg University and Chalmers University of Technology">
-                </div>
-                <!-- hackathon mission -->
-                <div class="col-sm-4 offset-sm-3" id="quote">
-                    <blockquote class="blockquote text-right">
-                        <p class="mb-0">
-                            <strong>"</strong>Software innovation, like almost every other kind of innovation, requires the ability
-                            to collaborate and share ideas with other people, and to sit down and talk with customers and
-                            get their feedback and understand their needs.
-                            <strong>"</strong>
-                        </p>
-                        <footer class="blockquote-footer">Bill Gates</footer>
-                    </blockquote>
-                </div>
-            </div>
-
-            <div class="row">
-                <!-- social media -->
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row" id="copyRight">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-6">
-                    <p>Copyright &copy; SE Division 2018</p>
-                </div>
-                <div class="col-sm-3"></div>
-            </div>
-        </div>
-    </footer>
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-    <!-- bootstrap template requirements -->
+        <!-- bootstrap template requirements -->
     <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
 
 
-    <!-- google maps api -->
-    <script>
-        function myMap() {
-            var mapCanvas = document.getElementById("map");
-            var mapOptions = {
-                center: new google.maps.LatLng(57.706624, 11.937166), zoom: 15
-            };
-            var map = new google.maps.Map(mapCanvas, mapOptions);
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS1grnImYvqNpRLPZgJXr6UClzNXR98B4&callback=myMap"></script>
+        <!-- google maps api -->
+        <script>
+            function myMap() {
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {
+                    center: new google.maps.LatLng(57.706624, 11.937166), zoom: 15
+                };
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS1grnImYvqNpRLPZgJXr6UClzNXR98B4&callback=myMap"></script>
 
-    <!-- countdown script-->
-    <script>
+        <!-- countdown script-->
+        <script>
         // Set the date we're counting down to
         var countDownDate = new Date("May 5, 2018 12:00:00").getTime();
 
@@ -638,7 +667,7 @@
 
             // Display the result in the element with id="demo"
             document.getElementById("gameDay").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
+            + minutes + "m " + seconds + "s ";
 
             // If the count down is finished, write some text
             if (distance < 0) {
@@ -648,7 +677,7 @@
         }, 1000);
     </script>
     <script type="text/javascript">
-          $("#navItem a[href^='#']").on('click', function(e) {
+      $("#navItem a[href^='#']").on('click', function(e) {
            // prevent default anchor click behavior
            e.preventDefault();
 
@@ -657,34 +686,34 @@
 
            // animate
            $('html, body').animate({
-               scrollTop: $(hash).offset().top
-             }, 400, function(){
+             scrollTop: $(hash).offset().top
+         }, 400, function(){
 
                // when done, add hash to url
                // (default click behaviour)
                window.location.hash = hash;
-             });
+           });
 
-            });
-            </script>
-    <!-- scroll to top function -->
-    <script>
-        myID = document.getElementById("scroll2top");
+       });
+   </script>
+   <!-- scroll to top function -->
+   <script>
+    myID = document.getElementById("scroll2top");
 
-var myScrollFunc = function () {
-    var y = window.scrollY;
-    if (y <= 1200) {
-        myID.className = "btn btn-warning hideButt"
-    } else {
-        myID.className = "btn btn-warning showButt"
-    }
-};
+    var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y <= 1200) {
+            myID.className = "btn btn-warning hideButt"
+        } else {
+            myID.className = "btn btn-warning showButt"
+        }
+    };
 
-window.addEventListener("scroll", myScrollFunc);
-    </script>
+    window.addEventListener("scroll", myScrollFunc);
+</script>
 
-    <!-- elevator music-->
-    <script>
+<!-- elevator music-->
+<script>
             // Elevator script included on the page, already.
 
             window.onload = function() {
@@ -692,12 +721,12 @@ window.addEventListener("scroll", myScrollFunc);
                 element: document.querySelector('#scroll2top'),
                 mainAudio: 'audio/elevator.mp3',
                 endAudio: 'audio/ping.wav' //credits go to: https://freesound.org/people/aji_/sounds/66136/
-              });
-            }
-    </script>
-</body>
+            });
+          }
+      </script>
+  </body>
 
-</html>
+  </html>
 
 <!--
     faq section:
