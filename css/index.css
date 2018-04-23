@@ -206,8 +206,11 @@ main {
 }
 
 #teamSection{
-    height: 30vw;
     margin: 7% auto 0 auto;
+}
+
+#teamSection h5{
+    font-size: 1rem;
 }
 
 #teamSection a {
@@ -247,6 +250,22 @@ main {
     font-weight: bold;
     color: #4b4b4b;
 }
+
+table{
+  width: 100%;
+  align: center;
+}
+
+td img{
+  max-width: 100%;
+  max-height: 150px;
+  flex: 50%;
+  padding: 15px;
+  margin:10px;
+  align-items: center;
+}
+
+
 
 /* Responsive Styles */
 
@@ -389,8 +408,8 @@ main {
 
 /* --------- partners --------- */
 #partners {
-    background-color: rgb(53, 53, 53); /*#009198*/
-    color: white;
+    background-color: white;
+    color: rgb(53, 53, 53);
 }
 
 #partnerText {
