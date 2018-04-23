@@ -207,7 +207,6 @@ main {
 
 #teamSection{
     height: 30vw;
-    max-width: 40%;
     margin: 7% auto 0 auto;
 }
 
@@ -217,6 +216,21 @@ main {
 
 #carouselSection, #teamPic {
     height: 23vw;
+}
+
+.slide-container{
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide-content{
+    width: 33%;
+}
+
+.img-desc{
+    text-align: center;
+    margin-top: 20px;
 }
 
 #teamPic img {
