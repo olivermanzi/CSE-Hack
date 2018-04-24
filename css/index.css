@@ -406,6 +406,11 @@ td img{
 
 }
 
+#registration a h2:hover{
+    border: 1rem solid #727272;
+    color: #ea0000;
+}
+
 /* --------- partners --------- */
 #partners {
     background-color: white;
