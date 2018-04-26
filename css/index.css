@@ -685,12 +685,12 @@ td img{
 }
 
 /* Override CSS */
-
 .text-muted{
     color: #ababab!important;
 }
 #typed {
-    font-size: 45px;
+    font-size: 8vw;
+    font-family: Bungee Shade;
 }
 
 .typed-cursor {
