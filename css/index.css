@@ -406,8 +406,12 @@ td img{
 
 }
 
+#registerBox{
+    padding-left: 25%;
+}
+
 #registration a h2:hover{
-    border: 1rem solid #727272;
+    border-color:#727272;
     color: #ea0000;
 }
 
@@ -573,8 +577,8 @@ td img{
         font-size: 45px;
     }
     #registration a{
-        padding-left: 95px;
-        text-align: end;
+        padding-left: 25%;
+        text-align: center;
     }
     #registration img {
         display: none;
@@ -674,16 +678,6 @@ td img{
     }
 }
 
-@media only screen and (max-width: 570px){
-    #title h1{
-        font-size: 37px;
-    }
-    #registration a{
-        padding-left: 80px;
-        text-align: end;
-    }
-}
-
 /* Override CSS */
 .text-muted{
     color: #ababab!important;
@@ -694,7 +688,7 @@ td img{
 }
 
 .typed-cursor {
-    font-size: 45px;
+    font-size: 7vw;
     opacity: 1;
     -webkit-animation: blinker 1.2s linear infinite;
     animation: blinker 1.2s linear infinite;
