@@ -685,10 +685,6 @@ td img{
 }
 
 /* Override CSS */
-.btn-outline-light{
-    background-color: #0cc3c154;
-    border-color: #000000;
-}
 
 .text-muted{
     color: #ababab!important;
