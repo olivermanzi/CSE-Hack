@@ -67,14 +67,6 @@ main {
     padding-top: 10%;
 }
 
-#title h1{
-    /**color: rgb(53, 53, 53);
-    font-family: Bungee Shade;
-    font-weight: bold;
-    font-size: 8vw;
-    text-align: center;*/
-}
-
 #logo img{
     padding-top: 10%;
     max-width: 35%;
@@ -163,26 +155,18 @@ main {
     padding: 5rem 0rem;
 }
 
-#cases h2{
+#case-title{
     font-family: Bungee;
 }
 
-#cases small{
-    font-family: Bungee Hairline;
-    font-size: 2vw;
-}
-
-#caseList {
+#case-content {
     text-decoration: none;
     text-align: center;
-    font-size: 4vw;
-    font-weight: bold;
+    font-size: 1vw;
+    color: rgb(53, 53, 53);
     padding: 3rem 2rem 3rem 0;
 }
 
-#caseList ul{
-    list-style-type: none; /*gets rid of bullet points*/
-}
 /* --------- team --------- */
 #team {
     background-color: rgb(53, 53, 53); /*#009198*/
@@ -395,14 +379,14 @@ td img{
     font-size: 4vw;;
     text-decoration: none;
     text-align: center;
-    color: #FF8F36;
+    color: rgb(78, 78, 78);
     margin-top: 5%;
 
     display: inline-block;
     margin: .25rem 0rem .25rem .125rem ;
     padding: .5rem .25rem;
     border-radius: 2%;
-    border: 1rem solid #FF8F36;
+    border: 1rem solid rgb(53, 53, 53);
 
 }
 
@@ -584,7 +568,7 @@ td img{
         display: none;
     }
     #registration a h2{
-        border: .5rem solid #FF8F36;
+        border: .5rem solid rgb(53, 53, 53);
     }
     #navItem{
         font-size: 15px;
