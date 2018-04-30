@@ -167,7 +167,15 @@ main {
 }
 
 #case-content ul {
-    list-style: none;
+    text-align: left;
+}
+
+#case-content h5{
+    font-family: Bungee;
+}
+
+#case-content strong{
+    font-weight: bolder;
 }
 
 /* --------- team --------- */
@@ -595,16 +603,11 @@ td img{
     #cases{
         padding: 2rem 0rem;
     }
-    #cases small{
-        font-family: Quicksand;
-        font-size: 18px;
+    #case-content{
+        font-size: 20px;
+        text-align: center;
     }
-    #caseList{
-        font-size: 25px;
-        text-align:center;
-        vertical-align: center;
-        padding: 0px 25px 0px 0px;
-    }
+
     #faqSection{
         padding: 10px 0px 25px 0px;
     }
