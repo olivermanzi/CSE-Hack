@@ -164,7 +164,10 @@ main {
     text-align: center;
     font-size: 1vw;
     color: rgb(53, 53, 53);
-    padding: 3rem 2rem 3rem 0;
+}
+
+#case-content ul {
+    list-style: none;
 }
 
 /* --------- team --------- */
