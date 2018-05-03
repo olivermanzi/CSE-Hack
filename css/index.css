@@ -674,6 +674,7 @@ td img{
 }
 #typed {
     font-size: 8vw;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .typed-cursor {
