@@ -178,6 +178,22 @@ main {
     font-weight: bolder;
 }
 
+#cases-link {
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+#cases-link a {
+    padding: 2rem 1.5rem;
+    font-size: 2.5rem;
+    font-family: Bungee;
+}
+
+#cases p{
+    text-align: center;
+    font-size: 2rem;
+}
+
 /* --------- team --------- */
 #team {
     background-color: rgb(53, 53, 53); /*#009198*/
