@@ -377,7 +377,7 @@ td img{
     justify-content: center;
     align-items: center;
     background-color: white;
-    height: 35vw;
+    height: 25vw;
 }
 
 #registration img{
@@ -402,12 +402,9 @@ td img{
 }
 
 #registerBox{
-    padding-left: 25%;
-}
-
-#registration a h2:hover{
-    border-color:#727272;
-    color: #ea0000;
+    margin: auto;
+    padding-right: 10%;
+    padding-left:10%;
 }
 
 /* --------- partners --------- */
@@ -701,4 +698,9 @@ td img{
 #title {
     text-align: center;
     width: 100%;
+}
+
+.emoji{
+  height:1em;
+  width:auto;
 }
