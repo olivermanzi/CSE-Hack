@@ -1,0 +1,13 @@
+#teamPic img {
+    max-width: auto;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: auto;
+    height: 15vw;
+    object-fit: cover;
+}
+
+#teamPicNames {
+    font-weight: bold;
+    color: #361515;
+}
