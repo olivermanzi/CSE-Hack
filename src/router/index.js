@@ -9,8 +9,7 @@ import partners from '@/components/partners.vue'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'Banner',
       component: Banner
@@ -24,7 +23,7 @@ export default new Router({
       path: '/terms',
       name: 'Terms',
       component: terms
-    }, 
+    },
     {
       path: '/cases',
       name: 'Cases',
@@ -37,3 +36,4 @@ export default new Router({
     }
   ]
 })
+
