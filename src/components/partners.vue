@@ -19,14 +19,14 @@
               <img src="img/partners/minclusion_black.png" alt="Partner logo - Minclusion">
             </a>
             <a href="https://www.aptiv.com/" target="_blank" alt="Aptiv">
-              <img src="img/partners/aptive_logo.png" alt="Partner logo - Aptiv">
+              <img src="https://assets.entrepreneur.com/content/3x2/2000/20180703190744-rollsafe-meme.jpeg?width=700&crop=2:1" alt="Partner logo - Aptiv">
             </a>
           </td>
         </tr>
         <tr>
           <td align="center">
             <a href="https://www.pcbway.com/" target="_blank" alt="PCBWay">
-              <img src="img/partners/pcbway_logo.png" alt="Partner logo - PCBWay">
+              <img src="https://img.washingtonpost.com/news/the-intersect/wp-content/uploads/sites/32/2015/04/putin-meme.jpg" alt="Partner logo - PCBWay">
             </a>
             <a
               href="https://www.facebook.com/itu.skip/posts/2181781931838377"
