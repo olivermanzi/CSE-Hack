@@ -9,6 +9,7 @@
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-sm-10 offset-sm-1">
           <div id="teamSection" class="carousel slide" data-ride="carousel">
