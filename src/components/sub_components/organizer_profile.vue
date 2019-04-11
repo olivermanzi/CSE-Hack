@@ -1,8 +1,10 @@
 <template>
-  <div class="slide-content" id="teamPic">
-    <img class="d-block img-fluid" v-bind:src="organizer.img" alt="First slide">
-    <div class="img-desc">
-      <h5>{{organizer.name}}</h5>
+  <div id="organizer_card" class="card" style="width: 18rem;">
+    <img id="organizer_img" class="card-img-top" v-bind:src="organizer.img" alt="organizer">
+    <div id="organizer_text" class="card-body">
+      <h5 id="organizer_text" class="card-title">{{organizer.name}}</h5>
+      <p class="card-text">CSE Team!</p>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
     </div>
   </div>
 </template>
@@ -16,4 +18,5 @@ export default {
 
 <style scoped>
 @import "./../../assets/style/temp_style/temp_organizers.css";
+@import "./../../assets/style/temp_style/temp_organizers_profile.css";
 </style>

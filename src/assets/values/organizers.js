@@ -1,15 +1,16 @@
+
 var batch1 = [
     {
         name: "Francisco Gomes",
-        img: '/src/assets/img/organizers/francisco.png'
+        img: 'src/assets/img/organizers/francisco.png'
     },
     {
         name: "Dimitris Platis",
-        img: '/src/assets/img/organizers/dimitris.jpg'
+        img: "src/assets/img/organizers/dimitris.jpg"
     },
     {
         name: "Ranim Khojah",
-        img: '/src/assets/img/organizers/ranim.jpg'
+        img: 'src/assets/img/organizers/ranim.jpg'
     }
 ]
 var batch2 = [

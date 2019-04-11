@@ -1,13 +1,14 @@
-#teamPic img {
-    max-width: auto;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: auto;
-    height: 15vw;
-    object-fit: cover;
+#organizer_card{
+    margin: 2% 1%;
+    height: 15vh;
 }
 
-#teamPicNames {
+#organizer_img {
+    max-width: auto;
+    margin: auto;
+}
+
+#organizer_text {
     font-weight: bold;
     color: #361515;
 }
