@@ -10,30 +10,35 @@ Vue.use(Router)
 
 export default new Router({
   routes: [{
-      path: '/',
-      name: 'Banner',
-      component: Banner
-    },
-    {
-      path: '/schedule',
-      name: 'Schedule',
-      component: schedule
-    },
-    {
-      path: '/terms',
-      name: 'Terms',
-      component: terms
-    },
-    {
-      path: '/cases',
-      name: 'Cases',
-      component: cases
-    },
-    {
-      path: '/partners',
-      name: 'Partners',
-      component: partners
-    }
+    path: '/',
+    name: 'Banner',
+    component: Banner
+  },
+  {
+    path: '/cases',
+    name: 'Cases',
+    component: cases
+  },
+  {
+    path: '/schedule',
+    name: 'Schedule',
+    component: schedule
+  },
+  // {
+  //   path: '/organizers',
+  //   name: 'Organizers',
+  //   component: organizers
+  // },
+  {
+    path: '/partners',
+    name: 'Partners',
+    component: partners
+  },
+  {
+    path: '/terms',
+    name: 'Terms',
+    component: terms
+  }
   ]
 })
 
