@@ -26,24 +26,19 @@ export default new Router({
     component: cases
   },
   {
-    path: '/terms',
-    name: 'Terms',
-    component: terms
-  },
-  {
     path: '/organizers',
     name: 'Organizers',
     component: organizers
   },
   {
-    path: '/cases',
-    name: 'Cases',
-    component: cases
-  },
-  {
     path: '/partners',
     name: 'Partners',
     component: partners
+  },
+  {
+    path: '/terms',
+    name: 'Terms',
+    component: terms
   }
   ]
 })
