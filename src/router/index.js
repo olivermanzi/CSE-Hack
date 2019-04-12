@@ -38,6 +38,11 @@ export default new Router({
     path: '/terms',
     name: 'Terms',
     component: terms
+  },
+  {
+    path: '/gallery',
+    name: 'Gallery',
+    component: gallery
   }
   ]
 })
