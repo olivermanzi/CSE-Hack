@@ -12,34 +12,41 @@
 </template>
 
 <script>
-  import VueGallery from 'vue-gallery';
-  
-  export default {
-    data: function () {
-      return {
-        images: [
-          'https://dummyimage.com/800/ffffff/000000',
-          'https://dummyimage.com/1600/ffffff/000000',
-          'https://dummyimage.com/1280/00000/ffffff',
-          'https://dummyimage.com/400/000000/ffffff',
-        ],
-        index: null
-      };
-    },
+import VueGallery from "vue-gallery";
 
-    components: {
-      'gallery': VueGallery
-    },
+export default {
+  data: function() {
+    return {
+      images: [
+        "https://dummyimage.com/800/ffffff/000000",
+        "https://dummyimage.com/1600/ffffff/000000",
+        "https://dummyimage.com/1280/00000/ffffff",
+        "https://dummyimage.com/400/000000/ffffff",
+        {
+          title: "A YouYube video",
+          href: "https://www.youtube.com/watch?v=hNdlUHBJDKs",
+          type: "text/html",
+          youtube: "hNdlUHBJDKs",
+          poster: "https://img.youtube.com/vi/hNdlUHBJDKs/maxresdefault.jpg"
+        }
+      ],
+      index: null
+    };
+  },
+
+  components: {
+    gallery: VueGallery
   }
+};
 </script> 
 
 <style scoped>
-  .image {
-    float: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border: 1px solid #ebebeb;
-    margin: 5px;
-  }
+.image {
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #ebebeb;
+  margin: 5px;
+}
 </style>
