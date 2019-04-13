@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Banner from '@/components/banner.vue'
+import banner from '@/components/banner.vue'
 import schedule from '@/components/schedule.vue'
-import terms from '@/components/terms.vue'
 import cases from '@/components/cases.vue'
+import terms from '@/components/terms.vue'
+import organizers from '@/components/organizers.vue'
 import partners from '@/components/partners.vue'
 
 Vue.use(Router)
@@ -12,7 +13,12 @@ export default new Router({
   routes: [{
     path: '/',
     name: 'Banner',
-    component: Banner
+    component: banner
+  },
+  {
+    path: '/schedule',
+    name: 'Schedule',
+    component: schedule
   },
   {
     path: '/cases',
@@ -20,15 +26,10 @@ export default new Router({
     component: cases
   },
   {
-    path: '/schedule',
-    name: 'Schedule',
-    component: schedule
+    path: '/organizers',
+    name: 'Organizers',
+    component: organizers
   },
-  // {
-  //   path: '/organizers',
-  //   name: 'Organizers',
-  //   component: organizers
-  // },
   {
     path: '/partners',
     name: 'Partners',
