@@ -1,12 +1,18 @@
 <template>
   <div>
-    <gallery :images="images" :index="index" @close="index = null"></gallery>
+    <gallery
+      :images="images"
+      :index="index"
+      :options="{youTubeVideoIdProperty: 'youtube', youTubePlayerVars: undefined, youTubeClickToPlay: true}"
+      @close="index = null"
+    ></gallery>
     <div
       class="image"
       v-for="(image, imageIndex) in images"
       :key="imageIndex"
       @click="index = imageIndex"
-      :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
+      :style="{ backgroundImage: 'url(' + image.poster + ')' ,width: '300px', height: '200px'}"
+      
     ></div>
   </div>
 </template>
@@ -17,11 +23,13 @@ import VueGallery from "vue-gallery";
 export default {
   data: function() {
     return {
-      images: [
-        "https://dummyimage.com/800/ffffff/000000",
-        "https://dummyimage.com/1600/ffffff/000000",
-        "https://dummyimage.com/1280/00000/ffffff",
-        "https://dummyimage.com/400/000000/ffffff",
+      images: [ //Not a good naming convention since there are videos in the array of objects here
+        {
+        title: "Dummy Pic",
+        href: "https://dummyimage.com/800/ffffff/000000",
+        type: "text/html",
+        poster: "https://dummyimage.com/800/ffffff/000000"
+        },
         {
           title: "A YouYube video",
           href: "https://www.youtube.com/watch?v=hNdlUHBJDKs",
