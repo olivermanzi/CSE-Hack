@@ -28,14 +28,14 @@ main {
 }
 
 .sectionTitle h2{
-    font-size: 6.5vw;
+    font-size: 5.5vw;
     text-align: center;
     /*margin-top: 5%;*/
     /* padding: 4rem 3rem 1.5rem 4rem; */
 }
 
 .sectionText {
-    font-size:1.5vw;
+    font-size:1vw;
     font-family: Cabin;
 }
 
@@ -309,9 +309,10 @@ td img{
 /* --------- faq --------- */
 #faq {
     background-color: rgb(53, 53, 53); /*#FCB500*/
-    color: white;
+    color: black;
     height: 100%;
     width: 100%;
+    margin-bottom: 15%;
 }
 
 #faqItems {
@@ -346,7 +347,11 @@ td img{
     height: 100%;
 }
 
-#faq .sectionText a{
+/*#faq .sectionText a{
+    font-size:1.25vw;
+    font-family: Cabin;
+}*/
+#faq .sectionText button{
     font-size:1.25vw;
     font-family: Cabin;
 }

@@ -7,210 +7,188 @@
                 </div>
                 <div class='col-sm-3'></div>
             </div>
-            <div class="row">
-                <div class="col-sm-10 offset-sm-1 sectionText" id="faqSection">
-                    <div class="row">
-                        <div class="col-sm-12" id="faqList">
-                            <button class="btn btn-outline-light btn-block" data-toggle="collapse" data-target="#whatIsHack" type="button" aria-expanded="false"
-                                aria-controls="whatIsHack">What is a hackathon?</button>
-                            <div class="collapse" id="whatIsHack">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Hackathons in a nutshell</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p>The Hackathon is a
-                                            <hlt>48 hour</hlt> (non-stop) event where groups of students engage in creative and
-                                            development activities related to application development. The goal is to hack
-                                            data openly available in the Internet and then create an app using the data.
-                                        </p>
-                                        <hr>
-                                        <p>Basically you will be doing:</p>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <p>THIS</p>
+
+            <div class="col-sm-6 offset-3 sectionText" id="faq">
+                <div class="card">
+                    <div class="card-header" id="whatIsHackHead">
+                    <h5 class="mb-0">
+                        <!--<button class="btn btn-dark btn-block" data-toggle="collapse" data-target="#whatIsHack" aria-expanded="true" aria-controls="whatIsHack">-->
+                        What is a hackathon?
+                    </h5>
+                    </div>
+
+                    <div id="whatIsHack" class="collapse show faqCards" aria-labelledby="whatIsHackHead" data-parent="#faqSection">
+                        <div class="card-body">
+                            <p>The Hackathon is a <hlt>48 hour</hlt> (non-stop) event where groups of students engage in creative and
+                                development activities related to application development. The goal is to hack
+                                data openly available in the Internet and then create an app using the data.
+                                </p>
+                                <hr>
+                                <p>Basically you will be doing:</p>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>THIS</p>
                                                 <iframe src="https://www.youtube.com/embed/6VakF2hZFPQ" frameborder="0" allowfullscreen>
                                                 </iframe>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <p>NOT THIS</p>
-                                                <iframe src="https://www.youtube.com/embed/hqKafI7Amd8" frameborder="0" allowfullscreen>
-                                                </iframe>
-                                            </div>
                                         </div>
-                                        <p/>
-                                        <p>The development happens throughout the entire 48 hours, but you do not need to stay
-                                            there the whole time... your competitor might. ;) 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" data-target="#whatIsFree" role="button" aria-expanded="false"
-                                aria-controls="whatIsFree">Is it free?</a>
-                            <div class="collapse" id="whatIsFree">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Nothing in this world is free...</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            but the CSE Hackathon 2.0 is absolutely free!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" data-target="#whatIsLanguage" role="button" aria-expanded="false"
-                                aria-controls="whatIsLanguage">Do I need to speak Swedish?</a>
-                            <div class="collapse" id="whatIsLanguage">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Swedish? Portugues? English? Kinyarwanda? Arabic?</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            You can speak whatever language you want within your team. However, presentations will be done in english... and so will
-                                            most of the mingling.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" data-target="#whatIsSleep" role="button" aria-expanded="false"
-                                aria-controls="whatIsSleep">Can I sleep at the event?</a>
-                            <div class="collapse" id="whatIsSleep">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Sleeping at the event...</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            Unfortunately participants are not allowed to sleep on the venue. We need to clear the venue before 10:00 pm, and we restart
-                                            the next morning around 8:00 am.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" data-target="#whatIsAdvice" role="button" aria-expanded="false"
-                                aria-controls="whatIsAdvice">Is there any advice?</a>
-                            <div class="collapse" id="whatIsAdvice">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Tips and Tricks</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-text">
-                                            <p>There is no
-                                                <hlt>I</hlt> in
-                                                <hlt>TEAM</hlt>. So, remember to build a good team with a variety of expertise
-                                                so everyone can share and learn from one another.</p>
-                                            <p>Being friendly (not FRIENDS) is essencial for collaboration in a Hackathon. Especially
-                                                among different teams. Remember, everyone is in the same boat: sink or swim.</p>
-                                            <hr>
-                                            <p>You
-                                                <hlt>can come with a team</hlt> of yours or meet people and
-                                                <hlt>join/form teams</hlt> in our brainstorming evening. Remember that
-                                                <hlt>they have to be CSE students</hlt>.</p>
-                                            <hr>
-                                            <p>
-                                                <hlt>Delegating tasks</hlt> is important. Explore everyone's unique capabilities:
-                                                Divide and conquer!</p>
-                                            <p>Try to assign different responsibilities, for instance:</p>
-                                            <ul>
-                                                <li>
-                                                    <p>
-                                                        <hlt>Coding</hlt>: Front-end, back-end, ripping data from websites, ...
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p>
-                                                        <hlt>Presentation</hlt>: Pitching the idea (slides, catch phrases), designing
-                                                        the interface, ...
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p>
-                                                        <hlt>Dev. Process</hlt>: Using tools (git, APIs, etc.) properly, track
-                                                        time and goals, talk with organization,...</p>
-                                                </li>
-                                            </ul>
-                                            <hr>
-                                            <p>There are lots of tips on winning and enjoying Hackathon. Here is
-                                                <a href="https://goo.gl/goXESf" target="_blank">
-                                                    <hlt>one</hlt>
-                                                </a>, this is
-                                                <a href="https://hackathon.guide/" target="_blank">
-                                                    <hlt>another</hlt>
-                                                </a>, or you
-                                                <a href="http://lmgtfy.com/?q=how+to+win+a+hackathon" target="_blank">
-                                                    <hlt>simply do this</hlt>
-                                                </a>.</p>
-                                            <p>
-                                                <hlt>Above all</hlt>: Be fun, creative and learn lots of new stuff (technical
-                                                and personal).</p>
-                                            <hr>
+                                        <div class="col-sm-6">
+                                            <p>NOT THIS</p>
+                                            <iframe src="https://www.youtube.com/embed/hqKafI7Amd8" frameborder="0" allowfullscreen>
+                                            </iframe>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                <p/>
+                                <p>The development happens throughout the entire 48 hours, but you do not need to stay
+                                there the whole time... your competitor might. ;) 
+                                </p>                
                         </div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" data-target="#whatIsFAQ" role="button" aria-expanded="false" aria-controls="whatIsFAQ">Does FAQ actually mean
-                                <br>"frequently asked questions"?</a>
-                            <div class="collapse" id="whatIsFAQ">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">The meaning of FAQ</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            According to the
-                                            <a href="https://en.oxforddictionaries.com/definition/faq" alt="link to definition of FAQ">Oxford Dictionary</a>, FAQ is described as a list of questions and answers relating
-                                            to a particular subject, especially one giving basic information for users of
-                                            a website.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="isFree">
+                    <h5 class="mb-0">Is it free?
+                        <!--<button class="btn btn-dark btn-block collapsed" data-toggle="collapse" data-target="#isFree" aria-expanded="false" aria-controls="isFree">
+                        Is it free?
+                        </button>-->
+                    </h5>
+                    </div>
+                    <div id="isFree" class="collapse show faqCards" aria-labelledby="headingTwo" data-parent="#faqSection">
+                        <div class="card-body">
+                            <p>Nothing in this world is free... but the CSE Hackathon 2.0 is absolutely free!</p>
                         </div>
-                        <div class="col-sm-6" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" data-target="#whatIsFood" role="button" aria-expanded="false"
-                                aria-controls="whatIsFood">What's the food situation like?
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="languageHead">
+                    <h5 class="mb-0">
+                        Do I need to speak Swedish?
+                        <!--<button class="btn btn-dark btn-block collapsed" data-toggle="collapse" data-target="#whatIsLanguage" aria-expanded="false" aria-controls="whatIsLanguage">
+                        Do I need to speak Swedish?
+                        </button>-->
+                    </h5>
+                    </div>
+                    <div id="whatIsLanguage" class="collapse show" aria-labelledby="languageHead" data-parent="#faqSection">
+                        <div class="card-body">
+                            You can speak whatever language you want within your team. However, presentations will be done in english... and so will
+                            most of the mingling.                
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="sleepHead">
+                    <h5 class="mb-0">
+                        Can I sleep at the event?
+                        <!--<button class="btn btn-dark btn-block collapsed" data-toggle="collapse" data-target="#whatIsSleep" aria-expanded="false" aria-controls="whatIsSleep">
+                        Do I need to speak Swedish?
+                        </button>-->
+                    </h5>
+                    </div>
+                    <div id="whatIsSleep" class="collapse show" aria-labelledby="sleepHead" data-parent="#faqSection">
+                        <div class="card-body">
+                            Unfortunately participants are not allowed to sleep on the venue. We need to clear the venue before 10:00 pm, and we restart
+                            the next morning around 8:00 am.              
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="adviceHead">
+                    <h5 class="mb-0">
+                        Is there any advice?
+                        <!--<button class="btn btn-dark btn-block collapsed" data-toggle="collapse" data-target="#whatIsAdvice" aria-expanded="false" aria-controls="whatIsAdvice">
+                        Do I need to speak Swedish?
+                        </button>-->
+                    </h5>
+                    </div>
+                    <div id="whatIsAdvice" class="collapse show" aria-labelledby="adviceHead" data-parent="#faqSection">
+                        <div class="card-body">
+                            <div class="card-text">
+                                <p>There is no
+                                    <hlt>I</hlt> in
+                                    <hlt>TEAM</hlt>. So, remember to build a good team with a variety of expertise
+                                    so everyone can share and learn from one another.
+                                </p>
+                                <p>Being friendly (not FRIENDS) is essencial for collaboration in a Hackathon. Especially
+                                    among different teams. Remember, everyone is in the same boat: sink or swim.
+                                </p>
+                                <hr>
+                                <p>You
+                                    <hlt>can come with a team</hlt> of yours or meet people and
+                                    <hlt>join/form teams</hlt> in our brainstorming evening. Remember that
+                                    <hlt>they have to be CSE students</hlt>.
+                                </p>
+                                <hr>
+                                <p>
+                                    <hlt>Delegating tasks</hlt> is important. Explore everyone's unique capabilities:
+                                    Divide and conquer!</p>
+                                    <p>Try to assign different responsibilities, for instance:</p>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <hlt>Coding</hlt>: Front-end, back-end, ripping data from websites, ...
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <hlt>Presentation</hlt>: Pitching the idea (slides, catch phrases), designing
+                                                    the interface, ...
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <hlt>Dev. Process</hlt>: Using tools (git, APIs, etc.) properly, track
+                                                time and goals, talk with organization,...
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <p>There are lots of tips on winning and enjoying Hackathon. Here is
+                                        <a href="https://goo.gl/goXESf" target="_blank">
+                                            <hlt>one</hlt>
+                                        </a>, this is
+                                        <a href="https://hackathon.guide/" target="_blank">
+                                            <hlt>another</hlt>
+                                        </a>, or you
+                                        <a href="http://lmgtfy.com/?q=how+to+win+a+hackathon" target="_blank">
+                                            <hlt>simply do this</hlt>
+                                        </a>.</p>
+                                        <p>
+                                            <hlt>Above all</hlt>: Be fun, creative and learn lots of new stuff (technical
+                                            and personal).</p>
+                                        <hr>
+                                </div>          
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="foodHead">
+                    <h5 class="mb-0">
+                        What's the food situation like?
                                 <br>
                                 <small class="text-muted">(asking for a friend)</small>
-                            </a>
-                            <div class="collapse" id="whatIsFood">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">*In yoda voice*
-                                            <br>IMPORTANT, food is.</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            Food will be provided by the organizers. You will be stuffed with pizza, candy and red bull until you tap out.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                        <!--<button class="btn btn-dark btn-block collapsed" data-toggle="collapse" data-target="#whatIsFood" aria-expanded="false" aria-controls="whatIsFood">
+                        Do I need to speak Swedish?
+                        </button>-->
+                    </h5>
+                    </div>
+                    <div id="whatIsFood" class="collapse show" aria-labelledby="foodHead" data-parent="#faqSection">
+                        <div class="card-body">
+                            Food will be provided by the organizers. You will be stuffed with pizza, candy and red bull until you tap out.       
                         </div>
-                        <div class="col-sm-12" id="faqList">
-                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" data-target="#LinksTutor" role="button" aria-expanded="false"
-                                aria-controls="LinksTutor">Links and Tutorials</a>
-                            <div class="collapse" id="LinksTutor">
-                                <div class="card text-dark bg-light mb-3 faqCards">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Save some googling time!</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p>Here you can find the coolest off-the-shelf materials that you might need to have
-                                            a look at :)</p>
-                                        <hr>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="linksHead">
+                    <h5 class="mb-0">
+                        Save some googling time! Here are some useful links:
+                                <br>
+                                <small class="text-muted">(asking for a friend)</small>
+                        <!--<button class="btn btn-dark btn-block collapsed" data-toggle="collapse" data-target="#LinksTutor" aria-expanded="false" aria-controls="LinksTutor">
+                        Do I need to speak Swedish?
+                        </button>-->
+                    </h5>
+                    </div>
+                    <div id="LinksTutor" class="collapse show" aria-labelledby="linksHead" data-parent="#faqSection">
+                        <div class="card-body">
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="red">
@@ -432,13 +410,14 @@
                                                     </li>
                                             </ul>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div >
-                            </div >
-                        </div >
-                    </div >
-                </div >
-            </div >
+                                        </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div >
 </template>
+
+<style scoped>
+    @import "../assets/style/temp_style/temp_style.css";
+</style>
