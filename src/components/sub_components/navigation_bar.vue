@@ -24,6 +24,9 @@
             <div class="col-sm-1" id="navItem">
               <router-link to="/terms" class="nav-link">Terms</router-link>
             </div>
+            <div class="col-sm-1" id="navItem">
+              <router-link to="/gallery" class="nav-link">Gallery</router-link>
+            </div>
           </div>
         </div>
       </div>
