@@ -1,0 +1,14 @@
+#organizer_card{
+    margin: 2% 1%;
+    height: 15vh;
+}
+
+#organizer_img {
+    max-width: auto;
+    margin: auto;
+}
+
+#organizer_text {
+    font-weight: bold;
+    color: #361515;
+}

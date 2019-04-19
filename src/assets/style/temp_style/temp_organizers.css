@@ -1,0 +1,57 @@
+/* --------- team --------- */
+#team {
+    background-color: rgb(216, 192, 53); /*#009198*/
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+#teamText {
+    width: 100%;
+}
+
+#teamText h2 {
+    font-family: Bungee Inline;
+    /*margin-left: 20%;*/
+    font-size: 4vw;
+    text-align: center;
+}
+
+#teamTextInfo{
+    text-align: left;
+    width: 80%;
+    padding: 5vw 3vw 8vw 0;
+}
+
+#teamSection{
+    margin: 7% auto 0 auto;
+}
+
+#teamSection h5{
+    font-size: 1rem;
+}
+
+#teamSection a {
+    height: 15vw;
+}
+
+#carouselSection, #teamPic {
+    height: 23vw;
+}
+
+.slide-container{
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide-content{
+    width: 33%;
+    padding: 10px;
+}
+
+.img-desc{
+    text-align: center;
+    margin-top: 20px;
+}
