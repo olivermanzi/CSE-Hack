@@ -1,33 +1,28 @@
 <template>
-  <div>
-    <!-- navigation bar -->
-    <nav class="sticky-top">
-      <div class="container-fluid" id="navBar">
-        <div class="row navbar navbar-expand-sm" role="navigation">
-          <div class="collapse navbar-collapse" id="navigationToggle">
-            <div class="col-sm-2" id="navItem">
-              <router-link to="/" class="nav-link">Home</router-link>
-              <!-- <a class="nav-link" v-bind:href="facebook">CSE Hackathon</a> -->
-            </div>
-            <div class="col-sm-1 offset-4" id="navItem">
-              <router-link to="/cases" class="nav-link">Cases</router-link>
-            </div>
-            <div class="col-sm-1" id="navItem">
-              <router-link to="/schedule" class="nav-link">Schedule</router-link>
-            </div>
-            <div class="col-sm-1" id="navItem">
-              <router-link to="/organizers" class="nav-link">Organizers</router-link>
-            </div>
-            <div class="col-sm-1" id="navItem">
-              <router-link to="/partners" class="nav-link">Partners</router-link>
-            </div>
-            <div class="col-sm-1" id="navItem">
-              <router-link to="/terms" class="nav-link">Terms</router-link>
-            </div>
-          </div>
+  <div class="cat-navbar container-fluid">
+    <div class="row navbar navbar-expand-sm sticky-top" role="navigation">
+      <div class="collapse navbar-collapse" id="navigationToggle">
+        <div class="cat-navbar-text-base col-sm-2">
+          <router-link class="cat-navbar-text" to="/">Home</router-link>
+        </div>
+        <div class="col-sm-4 dummy-column"></div>
+        <div class="col-sm-1 nav-link">
+          <router-link class="cat-navbar-text" to="/cases">Cases</router-link>
+        </div>
+        <div class="col-sm-1 nav-link">
+          <router-link class="cat-navbar-text" to="/schedule">Schedule</router-link>
+        </div>
+        <div class="col-sm-1 nav-link">
+          <router-link class="cat-navbar-text" to="/organizers">Organizers</router-link>
+        </div>
+        <div class="col-sm-1 nav-link">
+          <router-link class="cat-navbar-text" to="/partners">Partners</router-link>
+        </div>
+        <div class="col-sm-1 nav-link">
+          <router-link class="cat-navbar-text" to="/terms">Terms</router-link>
         </div>
       </div>
-    </nav>
+    </div>
   </div>
 </template>
 
@@ -44,7 +39,20 @@ export default {
 </script>
 
 <style>
-/* @import "~assets/style/global.css"; */
-@import url("~assets/style/global.css");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+/* @import "../../assets/style/a_big_css_file.css"; */
+.cat-navbar {
+  background-color: black;
+}
+.cat-navbar-text {
+  text-decoration: none;
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.cat-navbar-text-base {
+  text-align: center;
+}
 </style>
 

@@ -1,7 +1,7 @@
 <template>
-  <div class="border">
+  <div class="cat-page-container">
     <navigation_bar></navigation_bar>
-    <router-view class="content"></router-view>
+    <!-- <router-view class="cat-content"></router-view> -->
     <page_footer></page_footer>
   </div>
 </template>
@@ -19,12 +19,15 @@ export default {
 </script>
 
 <style>
-.content {
-  width: 100%;
-  height: 100%;
+.cat-content {
   border: 15px solid red;
 }
-.border {
-  border: 100px solid red;
+.cat-page-container {
+  /* min-hieght is set to 100% to ensure that 
+  the main content is always "filled" even when 
+  there is no content actually there. this prevents 
+  footer from jumping up to the middle of the page */
+  position: relative;
+  min-height: 100vh;
 }
 </style>
