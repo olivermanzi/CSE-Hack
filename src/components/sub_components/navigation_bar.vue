@@ -43,7 +43,8 @@ export default {
 };
 </script>
 
-<style scoped>
-@import "./../../assets/style/temp_style/temp_navigation_bar.css";
+<style>
+/* @import "~assets/style/global.css"; */
+@import url("~assets/style/global.css");
 </style>
 

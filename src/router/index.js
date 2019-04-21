@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import banner from '@/components/banner.vue'
+import base from '@/components/base.vue'
 import schedule from '@/components/schedule.vue'
 import cases from '@/components/cases.vue'
 import terms from '@/components/terms.vue'
@@ -12,8 +12,8 @@ Vue.use(Router)
 export default new Router({
   routes: [{
     path: '/',
-    name: 'Banner',
-    component: banner
+    name: 'Base',
+    component: base
   },
   {
     path: '/schedule',

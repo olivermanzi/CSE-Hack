@@ -19,7 +19,7 @@
 <script>
 import register_button from "./sub_components/register_button";
 export default {
-  name: "Banner",
+  name: "Base",
   components: {
     register_button
   }
