@@ -1,6 +1,6 @@
 <template>
   <!-- footer -->
-  <footer id="foot">
+  <div id="foot">
     <div class="container-fluid">
       <div id="quote">
         <p>Contact us:</p>
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 </template>
 
 <script>
