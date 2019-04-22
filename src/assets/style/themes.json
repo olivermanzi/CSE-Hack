@@ -1,0 +1,23 @@
+[
+    {
+        "style": "main theme",
+        "colors": {
+            "primary": "#fff",
+            "secondary": "#000"
+        },
+        "fonts": {
+            "main_title": {
+                "font-family": "'Roboto Slab', serif",
+                "size": ""
+            },
+            "header": {
+                "font-family": "'Anton', sans-serif",
+                "size": ""
+            },
+            "body": {
+                "font-family": "'Inconsolata', monospace",
+                "size": ""
+            }
+        }
+    }
+]
