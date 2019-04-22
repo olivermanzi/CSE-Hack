@@ -1,16 +1,1876 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>CSE HACK</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSE Hackathon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font api -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade|Cabin|Quicksand|Share+Tech+Mono"
+        rel="stylesheet">
+
+    <!-- bootstrap api -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- typing effect for title -->
+    <script type="application/javascript" src="js/typed.js"></script>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  </head>
 
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    <!-- css link -->
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+
+    <!-- http://www.bobrosslipsum.com -->
+
+    <!-- elevator api-->
+    <script src='js/elevator.js'></script>
+    <!-- http://tholman.com/elevator.js/ -->
+
+</head>
+
+<body data-spy="scroll" data-target="#navBar">
+    <!-- navigation bar -->
+
+    <nav class="sticky-top">
+        <div class="container-fluid" id="navBar">
+            <div class="row navbar navbar-expand-sm" role="navigation">
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navigationToggle" aria-controls="navigationToggle"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigationToggle">
+                    <div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link active" href="#schedule">Schedule</a>
+                    </div>
+                    <div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link" href="#hack">The Hack</a>
+                    </div>
+                    <div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link" href="#cases">The Cases</a>
+                    </div>
+                    <div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </div>
+                    <div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link" href="#terms">Terms</a>
+                    </div>
+                    <div class="col-sm nav-item" id="navItem">
+                        <a class="nav-link" href="#team">The Organizers</a>
+                    </div>
+                    <div class="col-sm" id="navItem">
+                        <a class="nav-link" href="#partners">Our Partners</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- header -->
+    <header>
+        <div class="container" id="header">
+            <div class="row">
+                <div id="title">
+                    <span id="typed"></span>
+                    <script type="application/javascript">
+                        var typed = new Typed('#typed', {
+                            strings: ['C&amp;SE@Hackathon> 2018'],
+                            typeSpeed: 40,
+                            backSpeed: 0,
+                            cursorChar: '▮',
+                            shuffle: true,
+                            smartBackspace: false,
+                            loop: false
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- register -->
+    <section id="schedule">
+        <div class="container-fluid">
+            <div class="row" id="registration">
+                <div class="col-sm-4"> </div>
+                <div class="col-sm-4">
+                    <a id="registerBox">
+                        <h2>Schedule</h2>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/stock/finger-point.png" alt="finger pointing">
+                </div>
+            </div>
+            <div class="row" id="schedule">
+                <div class="col-sm-4">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                        <div class="card-body">
+                            <h5 class="countDown red">May 4th</h5>
+                            <p class="card-text">
+                                <b class="red">16:45 - 17:00</b>
+                                <br>Registration
+                                <br>
+                                <b class="red">17:00 - 18:00</b>
+                                <br>Introduction and case presentations
+                                <br>
+                                <b class="red">18:00 - 19:00</b>
+                                <br>Brainstorming: Discussing and choosing your cases. Forming teams. Pizza!
+                                <img class="emoji"
+                                    src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/twitter/134/slice-of-pizza_1f355.png">
+                                <br>
+                                <b class="red">19:00 - 22:00</b>
+                                <br>Coding begins
+
+                                <hr>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                        <div class="card-body">
+                            <h5 class="countDown red">May 5th</h5>
+                            <p class="card-text">
+                                <i>
+                                    <center>Breakfast in the morning</center>
+                                </i>
+                                <br>
+                                <b class="red">08:00 - 13:00</b>
+                                <br>Coding
+                                <br>
+                                <b class="red">13:00 - 14:00</b>
+                                <br>Lunch (rumor has it BBQ
+                                <img class="emoji" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/twitter/134/meat-on-bone_1f356.png">
+                                <img class="emoji" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/twitter/134/poultry-leg_1f357.png">)
+                                <br>
+                                <b class="red">14:00 - 18:00</b>
+                                <br>Coding
+                                <br>
+                                <b class="red">18:00 - 19:00</b>
+                                <br>Pizza
+                                <img class="emoji" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/twitter/134/slice-of-pizza_1f355.png"> + Progress check-up.
+                                <br>
+                                <b class="red">19:00 - 22:00</b>
+                                <br>Coding
+                                <hr>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                        <div class="card-body">
+                            <h5 class="countDown red">May 6th</h5>
+                            <p class="card-text">
+                                <i>
+                                    <center>Brunch food will be around the whole morning - no lunch!</center>
+                                </i>
+                                <br>
+                                <b class="red">08:00 - 14:00</b>
+                                <br>Coding
+                                <br>
+                                <b class="red">14:00 - 15:00</b>
+                                <br>Presentations
+                                <br>
+                                <b class="red">15:00 - 16:00</b>
+                                <br>Judging and Awards
+                                <img class="emoji" src="">
+
+                                <hr>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- scroll to top button -->
+    <button onclick="elevator.elevate()" id="scroll2top" type="button" class="btn btn-warning hideButt">Scroll to Top</button>
+
+    <!-- intro -->
+    <section id="hack">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 sectionTitle">
+                    <h2>Welcome to this years Awesome Hackathon</h2>
+                </div>
+                <div class="col-sm-12">
+                    <p id="gameDay" class="countDown red"></p>
+                    <p id="introInfo">May 4th, 5th and 6th</p>
+                    <p id="introInfo2">Rooms: Orange, Blå and Grön Torg</p>
+                    <p id="introInfo2">Patricia, Lindholmen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cases -->
+    <section id="cases">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3 sectionTitle" id="case-title">
+                    <h2>The Cases</h2>
+                    <hr>
+                </div>
+                <div class="col-sm-6 offset-sm-3" id="cases-link">
+                    <a class="btn btn-danger" href="https://drive.google.com/drive/folders/1MUknvxqHMC6ccepQ7O1JH33bmi2RmCis?usp=sharing" role="button">Awesome Cases</a>
+                </div>
+                <div class="col-sm-6 offset-sm-3 sectionTitle" id="case-title">
+                    <p>Press the <strong class="red">button</strong> above to see the cases in more detail&#42</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1">
+                    <div class="card-columns">
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/event.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Inclusive Multicultural Society</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-2" role="button" aria-expanded="false" aria-controls="case-2">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal-->
+                                <div class="modal fade" id="case-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Inclusive Multicultural Society</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> The tagline for this project is “Integration with mobiles – developing
+                                                    language and intercultural communication support for newly arrived migrants
+                                                    in Sweden”. As described, the goal of this case is to take an on-the-go
+                                                    approach to integrating migrant workers. Since integration is a very
+                                                    costly and time consuming process, we are looking for a mobile solution
+                                                    that makes integration a process parallel to working.
+                                                    <hr>
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How would you make learning Swedish a passive process rather than an
+                                                        active one?</li>
+                                                    <li>Is it possible to use technology to facilitate communication between
+                                                        workers from different backgrounds?
+                                                    </li>
+                                                    <li>Is it possible to accomplish the above in real time?</li>
+                                                    <li>Can we use technology to educate new arrivals about Swedish cultural
+                                                        norms?
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/surgery.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Surgery Preparation Application</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-3" role="button" aria-expanded="false" aria-controls="case-3">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal-->
+                                <div class="modal fade" id="case-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Surgery Preparation Application</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> The thing often overlooked in depictions of healthcare in the media
+                                                    are the steps required to prepare oneself for a surgery. A patient usually
+                                                    receives a letter or email outlining the steps to prepare, such as washing
+                                                    oneself with a special soap, not eating for a period of time, etc. However,
+                                                    a problem faced by medical professionals is that most patients do not
+                                                    follow some or any of these steps. This leads to an operating hall reservation
+                                                    going to waste, which costs hospitals a lot of money. It is speculated
+                                                    that the main issue is a lack of understanding of the pre-operational
+                                                    preparation process. Your task is to develop a mobile solution that can
+                                                    improve comprehension of this process and create reminders of the steps
+                                                    along the way.
+                                                    <hr>
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can we encourage the user to complete their surgery preparation?</li>
+                                                    <li>Is there a way to put a patient’s mind at ease before the surgery?</li>
+                                                    <li>Can we smoothly integrate the pre-operational preparations in the user’s
+                                                        existing schedule?
+                                                    </li>
+                                                    <li>Would it help to present the process in the form of a game?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/health.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Inclusive Multicultural Healthcare Society</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-1" role="button" aria-expanded="false" aria-controls="case-1">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal -->
+                                <div class="modal fade" id="case-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Inclusive Multicultural Healthcare Society</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> The biggest problem currently faced by the Swedish healthcare sector
+                                                    is a shortage of staff, which leads to longer waiting times and various
+                                                    health risks to patients. To counteract this, an increasing number of
+                                                    migrant healthcare professionals from the EU/EES area are coming into
+                                                    Sweden. Newly-arrived employees have a hard time getting accustomed to
+                                                    the language, culture and customs of their new workplace. Your goal is
+                                                    to develop a mobile tool that can supplement and speed up the process
+                                                    of integration.
+                                                    <hr>
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can you make language acquisition possible while on the job?</li>
+                                                    <li>Is it possible to create a community of foreign-born employees and people
+                                                        willing to assist them?
+                                                    </li>
+                                                    <li>Can we offer migrant workers a concise but useful knowledge base about
+                                                        Sweden’s job market, laws, etc.?</li>
+                                                    <li>How would you improve communication between a patient and a foreign worker?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/case-4.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Learning with Recipes</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-4" role="button" aria-expanded="false" aria-controls="case-1">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal -->
+                                <div class="modal fade" id="case-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Learning with Recipes</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> The app supports learning by cooking (Laga och Lär) where users are
+                                                    provided with recipes in Swedish (Content of Swedish recipes from ICA’s
+                                                    homepage and Arabic recipes from other sources). The app will facilitate
+                                                    for users by providing translation of key words of ingredients and cooking
+                                                    instructions. There are some word exercises. Any new ideas are welcome
+                                                    for is app idea and to extend the gamification part. An idea is to search
+                                                    for existing code examples of codes in gamification apps, check GitHub
+                                                    with gamification.
+                                                    <hr>
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can follow-up exercises be introduced and implemented? </li>
+                                                    <li>How can this app be gamified further? </li>
+                                                    <li>How can users connect with other learners (e.g. to share ideas and recipes)?</li>
+                                                    <li>How can we implement the usage of external sources of recipes?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/case-5.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Professional development connected to language training</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-5" role="button" aria-expanded="false" aria-controls="case-1">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal -->
+                                <div class="modal fade" id="case-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Professional development connected to language training</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> Many migrants have educational backgrounds when they come to Sweden.
+                                                    But it is difficult for them to get a job due to lack of networks and
+                                                    deficient language skills. Some examples are chefs, teachers, engineers.
+                                                    There is a need for further links between professions and language learning.
+                                                    See e.g. Arbetsförmedlingen’s collaboration initiative with the app Lingio.
+                                                    This app provides only a part of the training needed for a profession.
+                                                    NB: Could the Laga och Lär feature in the app be used as part of the
+                                                    training for newly arrived chefs?
+                                                    <hr>
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can an app be support language learning for users belonging to a
+                                                        specific job category?</li>
+                                                    <li>How can an app improve communication between an employer and a foreign
+                                                        employee?</li>
+                                                    <li>How can we relate new linguistic concepts to existing professional knowledge?</li>
+                                                    <li>How can we integrate functionalities of the app with the job searching
+                                                        process?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/case-6.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Collaborative language learning through multi-user feature</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-6" role="button" aria-expanded="false" aria-controls="case-1">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal -->
+                                <div class="modal fade" id="case-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Collaborative language learning through multi-user feature</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> The Minclusion app contains everyday dialogues with training of Swedish
+                                                    phrases and pronunciation. It is possible to read, listen and record
+                                                    phrases. We are interested in finding ways to retain the users’ interest
+                                                    in using the app. One way is engaging in learning with others. The app
+                                                    could facilitate learning through participatory engagement such as giving
+                                                    feedback, collaborate on solving problems, sharing through social media.
+                                                    <hr>
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can a sharing feature be implemented in the app so that users can
+                                                        contribute with content that is saved?</li>
+                                                    <li>How can everyday dialogues in an app be used in real life situations
+                                                        through the app?</li>
+                                                    <li>How can we encourage users to go through the learning process together?</li>
+                                                    <li>How can we integrate existing social media solutions in the app?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/case-7.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Speech recognition and text to speech</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-7" role="button" aria-expanded="false" aria-controls="case-1">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal -->
+                                <div class="modal fade" id="case-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Speech recognition and text to speech</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> Implementing speech recognition is a challenge in developing language
+                                                    learning apps. There are many different accents and dialects which are
+                                                    difficult for a system to recognize. Different language learning app
+                                                    developers have solved this in various ways.
+                                                    <hr>
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can an app support learners in training speech?</li>
+                                                    <li>How can APIs be used to translate words and phrases for speech training?</li>
+                                                    <li>How can we provide accurate translations across dialects?</li>
+                                                    <li>How can we use voice recognition to correct the user’s mistakes?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/case-8.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive feedback connected to core vocabulary</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-8" role="button" aria-expanded="false" aria-controls="case-1">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal -->
+                                <div class="modal fade" id="case-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Interactive feedback connected to core vocabulary</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> One of the most important features in language learning is repetition
+                                                    and getting feedback so that the learner knows how to improve. Also,
+                                                    the Minclusion app is based on research of a core vocabulary that learners
+                                                    need to master in order to know the basics of a language. Different ways
+                                                    of word practice connected to feedback would be valuable to implement
+                                                    in the app. Such practice can take place through text, audio, films and
+                                                    text to speech, for instance.
+                                                    <hr>
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can an app provide feedback on core vocabulary for users?</li>
+                                                    <li>How can we measure the user’s progress in learning core vocabulary?</li>
+                                                    <li>How can we tailor the user’s learning experience depending on their progress?</li>
+                                                    <li>How can we integrate core concepts in existing media?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/case-9.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">ER Registration</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-9" role="button" aria-expanded="false" aria-controls="case-1">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal -->
+                                <div class="modal fade" id="case-9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">ER Registration</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> Registering in the Emergency Room is a large time sink in the process
+                                                    of admitting a patient. On average, it takes about 25 minutes to complete.
+                                                    All information is given verbally by the patient and written down by
+                                                    the nurse or receptionist. The patient’s passive, roundabout role in
+                                                    the process wastes a lot of time which, at worst, could lead to damage
+                                                    to the patient’s health. We would like to make the patients take a more
+                                                    active role in this process to shorten the time they have to wait and
+                                                    increase our effectivity.
+                                                    <hr>
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can we speed up the ER registration process?</li>
+                                                    <li>How can we engage the patient in registering for the ER?</li>
+                                                    <li>How can we efficiently store data given by the patient?</li>
+                                                    <li>How can we make it possible to process multiple patients at the same
+                                                        time?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/case-10.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">ER Status</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-10" role="button" aria-expanded="false" aria-controls="case-1">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal -->
+                                <div class="modal fade" id="case-10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">ER Status</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> The ER is a very confusing place, especially since most people have,
+                                                    thankfully, never stepped in one. There is a lot of information patients
+                                                    need to keep track of, and a lot of things they must or aren’t allowed
+                                                    to do. We would like to create an app that provides the patient with
+                                                    their current status in the ER. This includes information about the process
+                                                    such as information about what they are waiting for, which team is taking
+                                                    care of them and so on. It also extends to more practical informations
+                                                    such as their current location in the hospital, as well as things they
+                                                    are/aren’t allowed to do.
+                                                    <hr>
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can we display the information relevant to the patient in a comprehensive
+                                                        manner?</li>
+                                                    <li>How can we use the app to improve communication between patient and doctor?</li>
+                                                    <li>How can we integrate the app with existing ER processes(e.g. Registration
+                                                        in case 9?)</li>
+                                                    <li>How can the family of a patient use an app similar to this?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/case-11.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Digital Coordinator</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-11" role="button" aria-expanded="false" aria-controls="case-1">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal -->
+                                <div class="modal fade" id="case-11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Digital Coordinator</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> Placing patients is a very frustrating task for hospital staff. They
+                                                    must individually gather information about available beds from every
+                                                    unit and distribute the ER patients. The coordinator must take into account
+                                                    not only the number of beds, but also the workload per unit, staff working
+                                                    there, which discipline it’s related to(surgery, oncology etc.) and so
+                                                    on. We want to create an AI tool that takes into account all this information
+                                                    and determines how to place the patient on its own.
+                                                    <hr>
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can we calculate the optimal place for a patient?</li>
+                                                    <li>How can we speed up the process of selecting a place for a patient?</li>
+                                                    <li>How can we store all information about hospital units?</li>
+                                                    <li>How can we use all of the above info to make an autonomous system?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/case-12.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Police and Citizen Communication in Diverse Areas</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-12" role="button" aria-expanded="false" aria-controls="case-1">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal -->
+                                <div class="modal fade" id="case-12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Police and Citizen Communication in Diverse Areas</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> Trust in the police has fallen sharply in Sweden in the last two years.
+                                                    The relationship between the police and different ethnic groups in especially
+                                                    vulnerable areas is tenuous, and it has become increasingly difficult
+                                                    for the police to fulfil its mission. We want to develop a prototype
+                                                    of a mobile solution for police officers to facilitate communication.
+                                                    <hr>
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can we build trust between police and citizens?</li>
+                                                    <li>How can we help police officers understand non-Swedish speakers better?</li>
+                                                    <li>How can we help newly arrived citizens understand how to treat a police
+                                                        officer?</li>
+                                                    <li>How can we teach foreign people about Sweden’s legal system?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/case-13.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Communication between Immigrant Mothers and Swedish Nurses</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-13" role="button" aria-expanded="false" aria-controls="case-1">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal -->
+                                <div class="modal fade" id="case-13" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Communication between Immigrant Mothers and Swedish Nurses</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> Newly arrived mothers in Sweden are in a unique position in the Swedish
+                                                    health care system. The communication between them and Swedish health
+                                                    care staff can determine the health of not only them, but also a newborn
+                                                    child. We want to use information from a number of interviews gathered
+                                                    from nurses in immigrant dense areas, which specify the need for learning
+                                                    about the Swedish healthcare system, as well as support for learning
+                                                    about child care and contact with other mothers.
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can we educate newly arrived mothers about child birth and care?</li>
+                                                    <li>How can we connect foreign mothers?</li>
+                                                    <li>How can we educate foreign mothers about the Swedish health system?</li>
+                                                    <li>How can we support mothers during procedures for both the mother and
+                                                        the child?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+                            <div>
+                                <img class="card-img-top" src="img/stock/case-14.jpg" alt="event">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Engineers Across Borders</h5>
+                                <p class="card-text">
+                                    <hr>
+                                    <a class="btn btn-primary" data-toggle="modal" href="#case-14" role="button" aria-expanded="false" aria-controls="case-1">
+                                        Find out more...
+                                    </a>
+                                </p>
+                                <!-- add modal -->
+                                <div class="modal fade" id="case-14" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content" id="case-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Engineers Across Borders</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <strong>Description</strong>
+                                                    <br> With Sweden’s growing need for high skilled labor, a lot of foreign
+                                                    engineers have been coming into the country. The largest obstacle they
+                                                    are currently experiencing is integration in the workplace. We want to
+                                                    use information from interviews we’ve conducted to build upon our mobile
+                                                    prototype to facilitate this process. From our interviews, we want to
+                                                    emphasize the need for learning Swedish, writing professional emails,
+                                                    learning about cultural differences in communication and networking with
+                                                    colleagues.
+                                                    <strong>Related Questions</strong>
+                                                    <br>
+                                                </p>
+                                                <ul>
+                                                    <li>How can we facilitate the integration of foreign engineers?</li>
+                                                    <li>How can we encourage learning Swedish in newly arrived engineers?</li>
+                                                    <li>How can we assist new workers in communicating in a foreign environment?</li>
+                                                    <li>How can we connect immigrant engineers and Swedish workers?</li>
+                                                </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- PLACEHOLDER -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- faq -->
+    <section id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="sectionTitle">
+                    <h2>Frequently asked Questions</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1 sectionText" id="faqSection">
+                    <div class="row">
+                        <div class="col-sm-12" id="faqList">
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsHack" role="button" aria-expanded="false"
+                                aria-controls="whatIsHack">What is a hackathon?</a>
+                            <div class="collapse" id="whatIsHack">
+                                <div class="card text-dark bg-light mb-3 faqCards">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Hackathons in a nutshell</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>The Hackathon is a
+                                            <hlt>48 hour</hlt> (non-stop) event where groups of students engage in creative and
+                                            development activities related to application development. The goal is to hack
+                                            data openly available in the Internet and then create an app using the data.</p>
+                                        <hr>
+                                        <p>Basically you will be doing:</p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <p>THIS</p>
+                                                <iframe src="https://www.youtube.com/embed/6VakF2hZFPQ" frameborder="0" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p>NOT THIS</p>
+                                                <iframe src="https://www.youtube.com/embed/hqKafI7Amd8" frameborder="0" allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                        </div>
+                                        <p/>
+                                        <p>The development happens throughout the entire 48 hours, but you do not need to stay
+                                            there the whole time... your competitor might. ;) </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" id="faqList">
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFree" role="button" aria-expanded="false"
+                                aria-controls="whatIsFree">Is it free?</a>
+                            <div class="collapse" id="whatIsFree">
+                                <div class="card text-dark bg-light mb-3 faqCards">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Nothing in this world is free...</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            but the CSE Hackathon 2.0 is absolutely free!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" id="faqList">
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsLanguage" role="button" aria-expanded="false"
+                                aria-controls="whatIsLanguage">Do I need to speak Swedish?</a>
+                            <div class="collapse" id="whatIsLanguage">
+                                <div class="card text-dark bg-light mb-3 faqCards">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Swedish? Portugues? English? Kinyarwanda? Arabic?</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            You can speak whatever language you want within your team. However, presentations will be done in english... and so will
+                                            most of the mingling.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" id="faqList">
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsSleep" role="button" aria-expanded="false"
+                                aria-controls="whatIsSleep">Can I sleep at the event?</a>
+                            <div class="collapse" id="whatIsSleep">
+                                <div class="card text-dark bg-light mb-3 faqCards">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Sleeping at the event...</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Unfortunately participants are not allowed to sleep on the venue. We need to clear the venue before 10:00 pm, and we restart
+                                            the next morning around 8:00 am.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" id="faqList">
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsAdvice" role="button" aria-expanded="false"
+                                aria-controls="whatIsAdvice">Is there any advice?</a>
+                            <div class="collapse" id="whatIsAdvice">
+                                <div class="card text-dark bg-light mb-3 faqCards">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Tips and Tricks</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <p>There is no
+                                                <hlt>I</hlt> in
+                                                <hlt>TEAM</hlt>. So, remember to build a good team with a variety of expertise
+                                                so everyone can share and learn from one another.</p>
+                                            <p>Being friendly (not FRIENDS) is essencial for collaboration in a Hackathon. Especially
+                                                among different teams. Remember, everyone is in the same boat: sink or swim.</p>
+                                            <hr>
+                                            <p>You
+                                                <hlt>can come with a team</hlt> of yours or meet people and
+                                                <hlt>join/form teams</hlt> in our brainstorming evening. Remember that
+                                                <hlt>they have to be CSE students</hlt>.</p>
+                                            <hr>
+                                            <p>
+                                                <hlt>Delegating tasks</hlt> is important. Explore everyone's unique capabilities:
+                                                Divide and conquer!</p>
+                                            <p>Try to assign different responsibilities, for instance:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>
+                                                        <hlt>Coding</hlt>: Front-end, back-end, ripping data from websites, ...
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <hlt>Presentation</hlt>: Pitching the idea (slides, catch phrases), designing
+                                                        the interface, ...
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <hlt>Dev. Process</hlt>: Using tools (git, APIs, etc.) properly, track
+                                                        time and goals, talk with organization,...</p>
+                                                </li>
+                                            </ul>
+                                            <hr>
+                                            <p>There are lots of tips on winning and enjoying Hackathon. Here is
+                                                <a href="https://goo.gl/goXESf" target="_blank">
+                                                    <hlt>one</hlt>
+                                                </a>, this is
+                                                <a href="https://hackathon.guide/" target="_blank">
+                                                    <hlt>another</hlt>
+                                                </a>, or you
+                                                <a href="http://lmgtfy.com/?q=how+to+win+a+hackathon" target="_blank">
+                                                    <hlt>simply do this</hlt>
+                                                </a>.</p>
+                                            <p>
+                                                <hlt>Above all</hlt>: Be fun, creative and learn lots of new stuff (technical
+                                                and personal).</p>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" id="faqList">
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFAQ" role="button" aria-expanded="false" aria-controls="whatIsFAQ">Does FAQ actually mean
+                                <br>"frequently asked questions"?</a>
+                            <div class="collapse" id="whatIsFAQ">
+                                <div class="card text-dark bg-light mb-3 faqCards">
+                                    <div class="card-header">
+                                        <h5 class="card-title">The meaning of FAQ</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Accodring to the
+                                            <a href="https://en.oxforddictionaries.com/definition/faq" alt="link to definition of FAQ">Oxford Dictionary</a>, FAQ is described as a list of questions and answers relating
+                                            to a particular subject, especially one giving basic information for users of
+                                            a website.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" id="faqList">
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#whatIsFood" role="button" aria-expanded="false"
+                                aria-controls="whatIsFood">What's the food situation like?
+                                <br>
+                                <small class="text-muted">(asking for a friend)</small>
+                            </a>
+                            <div class="collapse" id="whatIsFood">
+                                <div class="card text-dark bg-light mb-3 faqCards">
+                                    <div class="card-header">
+                                        <h5 class="card-title">*In yoda voice*
+                                            <br>IMPORTANT, food is.</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Food will be provided by the organizers. You will be stuffed with pizza, candy and red bull until you tap out.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12" id="faqList">
+                            <a class="btn btn-outline-light btn-block" data-toggle="collapse" href="#LinksTutor" role="button" aria-expanded="false"
+                                aria-controls="LinksTutor">Links and Tutorials</a>
+                            <div class="collapse" id="LinksTutor">
+                                <div class="card text-dark bg-light mb-3 faqCards">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Save some googling time!</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Here you can find the coolest off-the-shelf materials that you might need to have
+                                            a look at :)</p>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="red">
+                                                    <h3>HTML & CSS</h3>
+                                                </div>
+                                                <p>HTML is the standard markup language for creating Web pages. Cascading Style
+                                                    Sheets (CSS) - is a style sheet language used to describe the presentation
+                                                    of a document written in HTML.</p>
+                                                <ul>
+                                                    <li>
+                                                        <a> Some tutorials:</a>
+                                                        <a href="https://www.w3schools.com/html/html_css.asp">
+                                                        Tutorial</a>
+                                                    </li>
+                                                    <li>
+                                                        <a> Some videos:</a>
+                                                        <a href="https://www.youtube.com/watch?v=Ggh_y-33Eso">
+                                                        Video1,</a>
+                                                        <a href="https://www.youtube.com/watch?v=0afZj1G0BIE"> Video2 </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="red">
+                                                    <h3>Java Script</h3>
+                                                </div>
+                                                <p>JavaScript is a programming language used to program the behavior of web
+                                                    pages.</p>
+                                                <ul>
+                                                    <li>
+                                                        <a> Some tutorials:</a>
+                                                        <a href="https://www.w3schools.com/js/default.asp ">
+                                                        Tutorial</a>
+                                                    </li>
+                                                    <li>
+                                                        <a> Some videos:</a>
+                                                        <a href="https://www.youtube.com/watch?v=BpPOPVxoMy0 ">
+                                                        Video</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="red">
+                                                    <h3>AngularJS </h3>
+                                                </div>
+                                                <p>AngularJS is a JavaScript framework. It can be added to an HTML page with
+                                                    a
+                                                    < script> tag. </p >
+                                                            <p>AngularJS extends HTML attributes with Directives, and binds data to HTML
+                                                    with Expressions.</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <a> Some tutorials:</a>
+                                                                    <a href="https://www.w3schools.com/angular/default.asp">
+                                                                        Tutorial</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a> Some videos:</a>
+                                                                    <a href="https://www.youtube.com/watch?v=nmFaZ6dVkt4 ">
+                                                                        Video</a>
+                                                                </li>
+                                                            </ul>
+                                            </div >
+                                                            <div class="col-sm-6">
+                                                                <div class="red">
+                                                                    <h3>Sublime text</h3>
+                                                                </div>
+                                                                <p>Sublime Text is a sophisticated text editor for code, markup and prose.</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a> Some videos:</a>
+                                                                        <a href="https://www.youtube.com/watch?v=zIkg3Oo1PVM">
+                                                                            Video</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="red">
+                                                                    <h3>Bootstrap</h3>
+                                                                </div>
+                                                                <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a> Some tutorials:</a>
+                                                                        <a href="https://www.w3schools.com/bootstrap4/default.asp">
+                                                                            Tutorial</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a> Some videos:</a>
+                                                                        <a href="https://www.youtube.com/watch?v=no-Ntkc836w ">
+                                                                            Video</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="red">
+                                                                    <h3>NodeJS</h3>
+                                                                </div>
+                                                                <p>NodeJS is a javascript framework that is used for writing custom servers.</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a> Some videos:</a>
+                                                                        <a href="https://www.youtube.com/watch?v=RF5_MPSNAtU">
+                                                                            Video</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="red">
+                                                                    <h3>Android Studio</h3>
+                                                                </div>
+                                                                <p>Android Studio is the official integrated development environment (IDE) for
+                                                                    Google's Android operating system, built on JetBrains' IntelliJ IDEA
+                                                    software and designed specifically for Android development.</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a> Some tutorials:</a>
+                                                                        <a href="https://www.tutorialspoint.com/android/index.htm">
+                                                                            Tutorial</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a> Some videos:</a>
+                                                                        <a href="https://www.youtube.com/watch?v=F-k5gwz_91o">
+                                                                            Video1,</a>
+                                                                        <a href="https://www.youtube.com/watch?v=-igAiudpBng ">
+                                                                            Video2</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="red">
+                                                                    <h3>jQuery Mobile</h3>
+                                                                </div>
+                                                                <p>A Touch-Optimized Web Framework. jQuery Mobile is a HTML5-based user interface
+                                                                    system designed to make responsive web sites and apps that are accessible
+                                                    on all smartphone, tablet and desktop devices.</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a> Some tutorials:</a>
+                                                                        <a href="https://learn.jquery.com/jquery-mobile/getting-started/">
+                                                                            Tutorial</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a> Some videos:</a>
+                                                                        <a href="https://www.youtube.com/w atch?v=QOUfcWENePY">
+                                                                            Video</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="red">
+                                                                    <h3>TensorFlow</h3>
+                                                                </div>
+                                                                <p>TensorFlow is an open-source software library for dataflow programming across
+                                                                    a range of tasks. It is a symbolic math library, and is also used for
+                                                                    machine learning applications such as neural networks. It is used for
+                                                    both research and production at Google.</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a> Some videos:</a>
+                                                                        <a href="https://www.youtube.com/watch?v=2FmcHiLCwTU">
+                                                                            Video1,
+                                                        </a>
+                                                                        <a href="https://www.youtube.com/watch?v=Y_XM3Bu-4yc"> Video2</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="red">
+                                                                    <h3>GitHub</h3>
+                                                                </div>
+                                                                <p>GitHub Pages is a static site hosting service designed to host your personal,
+                                                    organization, or project pages directly from a GitHub repository.</p>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a> Some tutorials:</a>
+                                                                        <a href="https://try.github.io/levels/1/challenges/1">
+                                                                            Tutorial1, </a>
+                                                                        <a href="https://git-scm.com/book/en/"> Tutorial2</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a> Git Commands:</a>
+                                                                        <a href="https://docs.google.com/document/d/1wACOJtfDDhSIiQm5q3KoWJbwFGinSXX_MrdvVlAG48w/edit?usp=sharing">
+                                                                            List of commands</a>
+                                                                        <li>
+                                                                            <a> Some videos:</a>
+                                                                            <a href="https://www.youtube.com/watch?v=HVsySz-h9r4">
+                                                                                Video </a>
+                                                                        </li>
+                                                </ul>
+                                            </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="red">
+                                                                        <h3>Pip</h3>
+                                                                    </div>
+                                                                    <p>pip is a package management system used to install and manage software packages
+                                                    through command lines written in Python.</p>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a> Some tutorials:</a>
+                                                                            <a href="https://pip.pypa.io/en/stable/"> Tutorial</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="red">
+                                                                        <h3>Homebrew</h3>
+                                                                    </div>
+                                                                    <p>Homebrew is an open-source software package management system that simplifies
+                                                    the installation of software on Apple's macOS operating system. </p>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a> Some tutorials:</a>
+                                                                            <a href="https://brew.sh/"> Tutorial</li>
+                                                                            <li>
+                                                                                <a> Some videos:</a>
+                                                                                <a href="https://www.youtube.com/watch?v=N-SDrN4G4lE">
+                                                                                    Video</a>
+                                                                            </li>
+                                                </ul>
+                                            </div>
+                                                                </div>
+                                                            </div>
+                                </div >
+                            </div >
+                        </div >
+                    </div >
+
+                </div >
+            </div >
+        </div >
+    </section >
+
+
+
+    < !--conditions -->
+                                                            <section id="terms">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="sectionTitle red">
+                                                                            <h2>Terms of Conduct</h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-8 offset-sm-2 sectionText" id="termImportant">
+                                                                            <p>
+                                                                                <strong class="red">IMPORTANT:</strong> By registering your participation you agree to the terms and conditions presented
+                                                                                below. This Computer &amp; Software Engineering (CSE) Hackathon follows the academic moral, ethics
+                                                                                and decency standards. Responsible behaviour is expected. Read below the details of the terms and
+                                                                                conditions to participate in the event.
+                    </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-8 offset-sm-2 sectionText" id="termList">
+                                                                            <ol>
+                                                                                <li class="red">
+                                                                                    Code of conduct:
+                        </li>
+                                                                                <ul>
+                                                                                    <li>Participants shall refrain from creating any content that could be considered illegal and/or
+                                                                                        obscene, offensive, defamatory, indecent, pornographic, unsuitable, racist, xenophobic or
+                                                                                        in any other way objectionable in line with general moral standards and/or according to the
+                                                                                        decision of the CSE Hackathon Organization Committee or that would/could damage the reputation
+                                of Chalmers and the University of Gothenburg.</li>
+                                                                                    <li>Participants shall refrain from accessing, storing (saving) and sending content or data with
+                                illegal, copyright-infringing, sexist, racist, offensive or otherwise objectionable ideologies.</li>
+                                                                                    <li>Participants shall comply with the house rules in force at the event location as well as any
+                                                                                        instructions given by the organizers on location, and shall neither enter nor use any rooms,
+                                                                                        installations or systems at the event location that are not intended to be used as part of
+                                the event.</li>
+                                                                                    <li>Participants assume responsibility for any damage they cause to the premises, installations and
+                                                                                        systems at the event location. In this respect and to the extent permitted by law, the CSE
+                                Hackathon organization committee declines all liability.</li>
+                                                                                </ul>
+                                                                                <hr>
+                                                                                    <li class="red">
+                                                                                        Participation:
+                        </li>
+                                                                                    <ul>
+                                                                                        <li>Participants need to register before deadline of
+                                <strong>April 30, 2018</strong>. However, the registration follows a first come, first served principle.
+                                                                                            When the maximum number of participants is reached, the registration page will reflect that
+                                new registrations are marked as reserves.</li>
+                                                                                        <li>Only students enrolled in the Bachelor Programmes from the University of Gothenburg are allowed
+                                to register and compete in the event.</li>
+                                                                                        <li>Teams will have at most 4 participants. Individuals can only participate in one team. The entire
+                                team shall be present at the hackathon, with the exception of force majeure.</li>
+                                                                                        <li>Participants will need to bring their own computers, mobile phones and any other devices with
+                                the necessary software.</li>
+                                                                                    </ul>
+                                                                                    <hr>
+                                                                                        <li class="red">
+                                                                                            Your creation(s):
+                        </li>
+                                                                                        <ul>
+                                                                                            <li>Participants are allowed to reuse their own code and libraries, but the competing project has
+                                to be new and created during the CSE Hackathon.</li>
+                                                                                            <li>Participants are prepared to present the results of their work at the end of the CSE Hackathon.</li>
+                                                                                            <li>Participants must clearly reference all sources/source materials when presenting the results.</li>
+                                                                                            <li>At the end of the hackathon, participants must describe what was developed during the hackathon.</li>
+                                                                                            <li>Participants are the owner of their creations. By participating at the hackathon the research
+                                                                                                projects at the Computer Science and Engineering Department at Chalmers and the University
+                                                                                                of Gothenburg are granted the right of using your application for research, but not commercial,
+                                                                                                purposes. Research use could include testing the application with a large user group, or
+                                investigating its effect on learning and explore further improvements of its core concept.</li>
+                                                                                            <li>Participants understand and acknowledge that the CSE Hackathon Organization Committee may have
+                                                                                                developed or commissioned, or may develop in the future, materials similar to the participants’
+                                                                                                work. Participants waive any and all claims they may have resulting from any similarities
+                                between their creations and any such materials.</li>
+                                                                                        </ul>
+                    </ol>
+                </div>
+            </div>
+                                                                        </div>
+    </section>
+                                                                    <!-- organizers -->
+    <section id="team">
+                                                                        <div class="container-fluid">
+                                                                            <div class="row">
+                                                                                <div id="teamText">
+                                                                                    <div class="sectionTitle">
+                                                                                        <h2>The Organizers</h2>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-sm-10 offset-sm-1">
+                                                                                    <div id="teamSection" class="carousel slide" data-ride="carousel">
+                                                                                        <div class="carousel-inner" role="listbox" id="carouselSection">
+                                                                                            <div class="carousel-item active" id="teamPic">
+                                                                                                <div class="slide-container">
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/Francisco.png" alt="First slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Francisco Gomes</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/Dimitris.jpg" alt="Second slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Dimitris Platis</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/ranim.jpg" alt="Third slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Ranim Khojah</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="carousel-item" id="teamPic">
+                                                                                                <div class="slide-container">
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/oliver.jpg" alt="Third slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Oliver Manzi</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/samer.jpg" alt="Third slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Samer Darknache</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/hanien.jpg" alt="Third slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Hanien Kobus</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="carousel-item" id="teamPic">
+                                                                                                <div class="slide-container">
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/vinny.jpeg" alt="Third slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Snezhina Racheva</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/filip.png" alt="Third slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Filip Fatic</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/naief.png" alt="Third slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Naief Jobsen</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/marko.jpg" alt="Third slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Marko Stanoevich</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="carousel-item" id="teamPic">
+                                                                                                <div class="slide-container">
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/Daiva.jpg" alt="Third slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Daiva Brazauskaite</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/Anneli.jpg" alt="Third slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Anneli Andersson</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="slide-content">
+                                                                                                        <img class="d-block img-fluid" src="img/team/michal.png" alt="Third slide" />
+                                                                                                        <div class="img-desc">
+                                                                                                            <h5>Michał Pałka</h5>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <a class="carousel-control-prev" href="#teamSection" role="button" data-slide="prev">
+                                                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                                            <span class="sr-only">Previous</span>
+                                                                                        </a>
+                                                                                        <a class="carousel-control-next" href="#teamSection" role="button" data-slide="next">
+                                                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                                            <span class="sr-only">Next</span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </section>
+
+                                                                    <!-- partners -->
+    <section id="partners">
+                                                                        <div class="container-fluid">
+                                                                            <div class="row">
+                                                                                <div id="partnerText">
+                                                                                    <div class="sectionTitle">
+                                                                                        <h2>The Partners</h2>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <a href="http://www.vgregion.se" alt="link">
+                                                                                            <img src="img/partners/vgr_background.png" alt="Partner logo - VGR" />
+                                                                                        </a>
+                                                                                        <a href="http://minclusion.org/en/">
+                                                                                            <img src="img/partners/minclusion_black.png" alt="Partner logo - Minclusion" />
+                                                                                        </a>
+                                                                                        <a href="https://www.aptiv.com/" target="_blank" alt="Aptiv">
+                                                                                            <img src="img/partners/aptive_logo.png" alt="Partner logo - Aptiv" />
+                                                                                        </a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="center">
+                                                                                        <a href="https://www.pcbway.com/" target="_blank" alt="PCBWay">
+                                                                                            <img src="img/partners/pcbway_logo.png" alt="Partner logo - PCBWay" />
+                                                                                        </a>
+                                                                                        <a href="https://www.facebook.com/itu.skip/posts/2181781931838377" alt="Skip Facebook link">
+                                                                                            <img src="img/partners/SKIP_logo.png" alt="Partner logo - SKIP" />
+                                                                                        </a>
+                                                                                        <a href="https://www.facebook.com/ctrlaltteam/?ref=br_rs" alt="Ctr-Alt-Team Facebook link">
+                                                                                            <img src="img/partners/cat_logo.png" alt="Partner logo - CTRL+ALT+TEAM" />
+                                                                                        </a>
+
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                            </table>
+                                                                        </div>
+
+                                                                        <!--
+                    <div class="row">
+                                                                            <div class="col-sm-10 offset-sm-1">
+                                                                                <div id="partnerSection" class="carousel slide" data-ride="carousel">
+                                                                                    <div class="carousel-inner" role="listbox" id="carouselSection">
+                                                                                        <div class="carousel-item active" id="partnerPic">
+                                                                                            <img class="d-block img-fluid" src="img/partners/VGReg.jpg" alt="First slide" />
+                                                                                            <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                                                                                <h5>Francisco Gomes</h5>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="carousel-item" id="teamPic">
+                                                                                            <img class="d-block img-fluid" src="img/team/Anneli.jpg" alt="Second slide" />
+                                                                                            <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                                                                                <h5>Anneli</h5>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="carousel-item" id="teamPic">
+                                                                                            <img class="d-block img-fluid" src="img/team/Suzana.jpg" alt="Third slide" />
+                                                                                            <div class="carousel-caption d-none d-md-block" id="picCaption">
+                                                                                                <h5>Suzana</h5>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <a class="carousel-control-prev" href="#partnerSection" role="button" data-slide="prev">
+                                                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                                        <span class="sr-only">Previous</span>
+                                                                                    </a>
+                                                                                    <a class="carousel-control-next" href="#partnerSection" role="button" data-slide="next">
+                                                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                                        <span class="sr-only">Next</span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>-->
+    </section>
+
+
+                                                                    <!-- footer -->
+    <footer id="foot">
+                                                                        <div class="container-fluid footerContent">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-10 offset-sm-1">
+                                                                                    <!-- google maps -->
+                    <div id="map" class="location"></div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row">
+                                                                                <!-- association -->
+                <div class="col-sm-3 offset-sm-1" id="department">
+                                                                                    <img src="img/cse/cgu.png" alt="Gothenburg University and Chalmers University of Technology">
+                </div>
+                                                                                    <!-- hackathon mission -->
+                <div class="col-sm-4 offset-sm-3" id="quote">
+                                                                                        <blockquote class="blockquote text-right">
+                                                                                            <p class="mb-0">
+                                                                                                <strong>"</strong>Software innovation, like almost every other kind of innovation, requires the ability
+                                                                                                to collaborate and share ideas with other people, and to sit down and talk with customers and
+                                                                                                get their feedback and understand their needs.
+                            <strong>"</strong>
+                                                                                            </p>
+                                                                                            <footer class="blockquote-footer">Bill Gates</footer>
+                                                                                        </blockquote>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="row">
+                                                                                    <!-- social media -->
+            </div>
+                                                                            </div>
+                                                                            <div class="container-fluid">
+                                                                                <div class="row" id="copyRight">
+                                                                                    <div class="col-sm-3"></div>
+                                                                                    <div class="col-sm-6">
+                                                                                        <p>Copyright &copy; SE Division 2018</p>
+                                                                                    </div>
+                                                                                    <div class="col-sm-3"></div>
+                                                                                </div>
+                                                                            </div>
+    </footer>
+
+                                                                        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- bootstrap template requirements -->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- google maps api -->
+    <script>
+                    function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                        center: new google.maps.LatLng(57.706624, 11.937166), zoom: 15
+                };
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+            }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS1grnImYvqNpRLPZgJXr6UClzNXR98B4&callback=myMap"></script>
+
+    <!-- countdown script-->
+    <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("May 4, 2018 17:00:00").getTime();
+    
+            // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+        
+                    // Find the distance between now an the count down date
+                    var distance = countDownDate - now;
+        
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+                    // Display the result in the element with id="demo"
+                    document.getElementById("gameDay").innerHTML = days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s ";
+        
+                    // If the count down is finished, write some text
+            if (distance < 0) {
+                        clearInterval(x);
+                document.getElementById("gameDay").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+    </script>
+    <script type="text/javascript">
+        $("#navItem a[href^='#']").on('click', function (e) {
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+
+                    // store hash
+                    var hash = this.hash;
+        
+                    // animate
+            $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+            }, 400, function () {
+
+                        // when done, add hash to url
+                        // (default click behaviour)
+                        window.location.hash = hash;
+            });
+        
+                });
+    </script>
+    <!-- scroll to top function -->
+    <script>
+                myID = document.getElementById("scroll2top");
+        
+        var myScrollFunc = function () {
+            var y = window.scrollY;
+            if (y <= 1200) {
+                        myID.className = "btn btn-warning hideButt"
+                    } else {
+                        myID.className = "btn btn-warning showButt"
+                    }
+        };
+            
+                    window.addEventListener("scroll", myScrollFunc);
+    </script>
+
+    <!-- elevator music-->
+    <script>
+                    // Elevator script included on the page, already.
+            
+        window.onload = function () {
+            var elevator = new Elevator({
+                        element: document.querySelector('#scroll2top'),
+                    mainAudio: 'audio/elevator.mp3',
+                    endAudio: 'audio/ping.wav' //credits go to: https://freesound.org/people/aji_/sounds/66136/
+                });
+            }
+    </script>
+</body>
+
 </html>
+
+<!--
+    faq section:
+    <div class="w-100"></div> <!- creates new "row" ->: used to create a new "row" which would consequently lead to equal rows of columns
+
+-->
+
+<!-- reminder to self: credit elevator music to = Local Forecast - Elevator Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 3.0 License
+http://creativecommons.org/licenses/by/3.0/-->
