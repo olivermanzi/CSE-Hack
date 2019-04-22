@@ -5,24 +5,24 @@
         <div class="col-sm-1">
           <router-link class="cat-navbar-text" to="/">Home</router-link>
         </div>
-        <div class="col-sm-1 offset-sm-1">
+        <!-- <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/cases">Cases</router-link>
-        </div>
-        <div class="col-sm-1 offset-sm-1">
+        </div>-->
+        <!-- <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/schedule">Schedule</router-link>
-        </div>
-        <div class="col-sm-1 offset-sm-1">
+        </div>-->
+        <!-- <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/organizers">Organizers</router-link>
-        </div>
-        <div class="col-sm-1 offset-sm-1">
+        </div>-->
+        <!-- <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/partners">Partners</router-link>
-        </div>
-        <div class="col-sm-1 offset-sm-1">
+        </div>-->
+        <!-- <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/terms">Terms</router-link>
-        </div>
-        <div class="col-sm-1">
-          <!-- <router-link class="cat-navbar-text" to="/about">About</router-link> -->
-        </div>
+        </div>-->
+        <!-- <div class="col-sm-1">
+          <router-link class="cat-navbar-text" to="/gallery">Gallery</router-link>
+        </div>-->
       </div>
     </div>
 
@@ -38,7 +38,7 @@
           <h3>Contact</h3>
           <ul>
             <li>
-              <a v-bind:href="cat_data.facebook">Facebook</a>
+              <a v-bind:href="cat_data.facebook" target="_blank">Facebook</a>
             </li>
             <li>
               Email
@@ -50,7 +50,7 @@
           <h3>Location</h3>
           <ul>
             <li>
-              <a v-bind:href="cat_data.location">Forskningsgången 6, 417 56 Göteborg</a>
+              <a v-bind:href="cat_data.location" target="_blank">Forskningsgången 6, 417 56 Göteborg</a>
             </li>
           </ul>
         </div>
@@ -68,7 +68,7 @@
           <ul>
             <li>
               Click
-              <a v-bind:href="cat_data.gu">here</a>
+              <a v-bind:href="cat_data.gu" target="_blank">here</a>
             </li>
           </ul>
         </div>
@@ -102,6 +102,7 @@ export default {
 .cat-container {
   position: relative;
   min-height: 100vh;
+  background-color: black;
 }
 .cat-content {
   position: inherit;
@@ -117,7 +118,7 @@ export default {
   background-color: black;
   text-align: center;
 }
-.cat-navbar-text{
+.cat-navbar-text {
   color: white;
   text-decoration: none;
   font-family: "Inconsolata", monospace;
