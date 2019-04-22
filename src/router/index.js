@@ -7,6 +7,7 @@ import terms from '@/components/terms.vue'
 import organizers from '@/components/organizers.vue'
 import partners from '@/components/partners.vue'
 import gallery from '@/components/gallery.vue'
+import about from '@/components/about.vue'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
     name: 'Gallery',
     component: gallery
   },
+  {
+    path: '/about',
+    name: 'About',
+    component: about
+  }
   ]
 })
 
