@@ -62,5 +62,5 @@ export default {
 </script>
 
 <style scoped>
-@import "./../assets/style/temp_style/temp_organizers.css";
+/* @import "./../assets/style/temp_style/temp_organizers.css"; */
 </style>
