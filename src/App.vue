@@ -1,65 +1,172 @@
 <template>
-  <div id="app">
-    <navigation_bar></navigation_bar>
-    <router-view/>
+  <div class="cat-container container-fluid">
+    <div class="cat-navbar row navbar navbar-expand-sm sticky-top" role="navigation">
+      <div class="collapse navbar-collapse" id="navigationToggle">
+        <div class="cat-navbar-text-base col-sm-2">
+          <router-link class="cat-navbar-text" to="/">Home</router-link>
+        </div>
+        <div class="col-sm-4 dummy-column"></div>
+        <div class="col-sm-1 nav-link">
+          <router-link class="cat-navbar-text" to="/cases">Cases</router-link>
+        </div>
+        <div class="col-sm-1 nav-link">
+          <router-link class="cat-navbar-text" to="/schedule">Schedule</router-link>
+        </div>
+        <div class="col-sm-1 nav-link">
+          <router-link class="cat-navbar-text" to="/organizers">Organizers</router-link>
+        </div>
+        <div class="col-sm-1 nav-link">
+          <router-link class="cat-navbar-text" to="/partners">Partners</router-link>
+        </div>
+        <div class="col-sm-1 nav-link">
+          <router-link class="cat-navbar-text" to="/terms">Terms</router-link>
+        </div>
+      </div>
+    </div>
 
-    <!-- footer -->
-    <footer id="foot">
-      <div class="container-fluid">
-        <div id="quote">
-          <p>Contact us:</p>
+    <!-- content goes here -->
+    <div class="cat-content row">
+      <router-view/>
+    </div>
+    <!-- ------------------ -->
+
+    <div class="cat-footer container-fluid">
+      <div class="cat-info row">
+        <div class="cat-contact col-sm-3">
+          <h3>Contact</h3>
           <ul>
             <li>
-              <p>
-                <a v-bind:href="facebook">Facebook</a>
-              </p>
+              <a v-bind:href="facebook">Facebook</a>
             </li>
             <li>
-              <p>
-                <a v-bind:href="mail">Gmail</a>
-              </p>
+              Email
+              <a v-bind:href="mail">cat@gota.gu.se</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cat-location col-sm-3">
+          <h3>Location</h3>
+          <ul>
+            <li>
+              <p>address here</p>
+            </li>
+          </ul>
+        </div>
+        <div class="cat-signup col-sm-3">
+          <h3>Become a member of Ctrl-Alt-Team</h3>
+          <ul>
+            <li>
+              click
+              <a v-bind:href="signup">here</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cat-gu col-sm-3">
+          <h3>Interesetd in Gothenburg University's Computer Science Department?</h3>
+          <ul>
+            <li>
+              Click
+              <a v-bind:href="gu">here</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="container-fluid">
-        <div class="row" id="copyRight">
-          <div class="col-sm-6 offset-sm-3">
-            <p>Copyright &copy; SE Division 2019</p>
-          </div>
+      <div class="cat-legal row">
+        <div class="col-sm-6">
+          <p>Copyright &copy; 2019 CTR-Alt-TEAM. All rights reserved.</p>
+        </div>
+        <div class="col-sm-6">
+          <p>Yours truly, C.A.T ❤️.</p>
         </div>
       </div>
-    </footer>
+    </div>
   </div>
 </template>
 
 <script>
-import navigation_bar from "./components/sub_components/navigation_bar";
-import footer from "./components/sub_components/footer";
-import links from "./assets/values/links.js";
+import links from "./assets/values/links";
 export default {
   name: "App",
-  components: {
-    navigation_bar,
-    footer
-  },
   data() {
     return {
-      facebook: link.facebook_link,
-      mail: link.mail_link
+      facebook: links.facebook_link,
+      mail: links.mail_link,
+      signup: links.cat_signup,
+      gu: links.gu
     };
   }
 };
 </script>
 
-<style scoped>
-@import "./assets/style/temp_style/temp_style.css";
-@import "./assets/style/temp_style/temp_footer.css";
-#app {
+<style>
+/* general */
+.cat-container {
+  position: relative;
+  min-height: 100vh;
+}
+.cat-content {
+  position: inherit;
   height: 100%;
+
+  /* padd the bottom with the height of the footer. its a patch solution, but a begger should never be picky ;( */
+  padding-bottom: 10rem;
+}
+
+/* navbar */
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+.cat-navbar {
+  background-color: black;
+}
+.cat-navbar-text {
+  text-decoration: none;
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.cat-navbar-text-base {
+  text-align: center;
+}
+
+/* footer */
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+.cat-footer {
+  background-color: black;
+  color: white;
+
+  text-decoration: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 1em;
+  padding-top: 1%;
+
+  /* since the container in the app component is set to the height of the screen,
+we position the footer at the bottom of the page absolute to the container that the footer is in.
+in other words, footer is inside another container that has the height of the entire screen and
+a relative position 
+source: https://medium.freecodecamp.org/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10rem;
   width: 100%;
-  border: 20px, solid, black;
+}
+.cat-footer h3 {
+  font-size: 1.2em;
+}
+.cat-contact h3 {
+  color: white;
+}
+.cat-location h3 {
+  color: green;
+}
+.cat-signup h3 {
+  color: yellow;
+}
+.cat-gu h3 {
+  color: blueviolet;
+}
+.cat-legal {
+  font-size: 0.8em;
+  text-align: center;
 }
 </style>
-
-

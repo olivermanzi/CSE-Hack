@@ -1,4 +1,3 @@
-
 <template>
   <section id="terms">
     <div class="container">

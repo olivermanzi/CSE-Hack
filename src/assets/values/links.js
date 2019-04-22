@@ -1,9 +1,11 @@
-var facebook_link = "https://www.facebook.com/ctrlaltteam/";
-var mail_link = "mailto:cat@gota.gu.se?";
-var register_link = "";
+var data = {
+    cat_facebook: "https://www.facebook.com/ctrlaltteam/",
+    cat_mail: "mailto:cat@gota.gu.se",
+    cat_signup: "mailto:cat@gota.gu.se?subject=I'd like to become a C.A.T",
+    cat_gu: "https://cse.gu.se/english",
+    cat_cse_register: ""
 
+}
 module.exports = {
-    facebook_link,
-    mail_link,
-    register_link
+    data
 }

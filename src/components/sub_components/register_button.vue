@@ -17,5 +17,4 @@ export default {
 </script>
 
 <style scoped>
-@import "./../../assets/style/temp_style/temp_button.css";
 </style>
