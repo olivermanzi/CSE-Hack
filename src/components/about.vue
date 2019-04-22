@@ -1,7 +1,9 @@
 <template>
-
+<div>
+    <h2>Gallery</h2>
     <gallery/>
- 
+    
+</div>
 </template>
 
 
