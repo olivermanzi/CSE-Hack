@@ -1,5 +1,5 @@
 {
-  "name": "CSE-Hack",
+  "name": "cse-hack",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "",
@@ -7,11 +7,14 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "server": "node server.js",
+    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.19",
+    "express": "^4.16.4",
     "vue": "^2.6.10",
     "vue-gallery": "^2.0.0",
     "vue-router": "^3.0.1"
