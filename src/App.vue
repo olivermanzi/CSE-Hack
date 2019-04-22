@@ -2,24 +2,26 @@
   <div class="cat-container container-fluid">
     <div class="cat-navbar row navbar navbar-expand-sm sticky-top" role="navigation">
       <div class="collapse navbar-collapse" id="navigationToggle">
-        <div class="cat-navbar-text-base col-sm-2">
+        <div class="col-sm-1">
           <router-link class="cat-navbar-text" to="/">Home</router-link>
         </div>
-        <div class="col-sm-4 dummy-column"></div>
-        <div class="col-sm-1 nav-link">
+        <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/cases">Cases</router-link>
         </div>
-        <div class="col-sm-1 nav-link">
+        <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/schedule">Schedule</router-link>
         </div>
-        <div class="col-sm-1 nav-link">
+        <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/organizers">Organizers</router-link>
         </div>
-        <div class="col-sm-1 nav-link">
+        <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/partners">Partners</router-link>
         </div>
-        <div class="col-sm-1 nav-link">
+        <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/terms">Terms</router-link>
+        </div>
+        <div class="col-sm-1">
+          <!-- <router-link class="cat-navbar-text" to="/about">About</router-link> -->
         </div>
       </div>
     </div>
@@ -36,11 +38,11 @@
           <h3>Contact</h3>
           <ul>
             <li>
-              <a v-bind:href="facebook">Facebook</a>
+              <a v-bind:href="cat_data.facebook">Facebook</a>
             </li>
             <li>
               Email
-              <a v-bind:href="mail">cat@gota.gu.se</a>
+              <a v-bind:href="cat_data.mail">cat@gota.gu.se</a>
             </li>
           </ul>
         </div>
@@ -48,7 +50,7 @@
           <h3>Location</h3>
           <ul>
             <li>
-              <p>address here</p>
+              <a v-bind:href="cat_data.location">Forskningsgången 6, 417 56 Göteborg</a>
             </li>
           </ul>
         </div>
@@ -57,7 +59,7 @@
           <ul>
             <li>
               click
-              <a v-bind:href="signup">here</a>
+              <a v-bind:href="cat_data.signup">here</a>
             </li>
           </ul>
         </div>
@@ -66,7 +68,7 @@
           <ul>
             <li>
               Click
-              <a v-bind:href="gu">here</a>
+              <a v-bind:href="cat_data.gu">here</a>
             </li>
           </ul>
         </div>
@@ -84,15 +86,12 @@
 </template>
 
 <script>
-import links from "./assets/values/links";
+import cat_data from "./assets/values/links.js";
 export default {
   name: "App",
   data() {
     return {
-      facebook: links.facebook_link,
-      mail: links.mail_link,
-      signup: links.cat_signup,
-      gu: links.gu
+      cat_data: cat_data
     };
   }
 };
@@ -116,17 +115,24 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 .cat-navbar {
   background-color: black;
+  text-align: center;
 }
-.cat-navbar-text {
-  text-decoration: none;
+.cat-navbar-text{
   color: white;
+  text-decoration: none;
   font-family: "Inconsolata", monospace;
   font-size: 1.5em;
   font-weight: bold;
 }
-.cat-navbar-text-base {
+/* .cat-navbar-text {
+  text-decoration: none;
   text-align: center;
-}
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+
+} */
 
 /* footer */
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
