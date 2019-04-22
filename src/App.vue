@@ -2,24 +2,26 @@
   <div class="cat-container container-fluid">
     <div class="cat-navbar row navbar navbar-expand-sm sticky-top" role="navigation">
       <div class="collapse navbar-collapse" id="navigationToggle">
-        <div class="cat-navbar-text-base col-sm-2">
+        <div class="col-sm-1">
           <router-link class="cat-navbar-text" to="/">Home</router-link>
         </div>
-        <div class="col-sm-4 dummy-column"></div>
-        <div class="col-sm-1 nav-link">
+        <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/cases">Cases</router-link>
         </div>
-        <div class="col-sm-1 nav-link">
+        <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/schedule">Schedule</router-link>
         </div>
-        <div class="col-sm-1 nav-link">
+        <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/organizers">Organizers</router-link>
         </div>
-        <div class="col-sm-1 nav-link">
+        <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/partners">Partners</router-link>
         </div>
-        <div class="col-sm-1 nav-link">
+        <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/terms">Terms</router-link>
+        </div>
+        <div class="col-sm-1">
+          <!-- <router-link class="cat-navbar-text" to="/about">About</router-link> -->
         </div>
       </div>
     </div>
@@ -113,17 +115,24 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 .cat-navbar {
   background-color: black;
+  text-align: center;
 }
-.cat-navbar-text {
-  text-decoration: none;
+.cat-navbar-text{
   color: white;
+  text-decoration: none;
   font-family: "Inconsolata", monospace;
   font-size: 1.5em;
   font-weight: bold;
 }
-.cat-navbar-text-base {
+/* .cat-navbar-text {
+  text-decoration: none;
   text-align: center;
-}
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+
+} */
 
 /* footer */
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
