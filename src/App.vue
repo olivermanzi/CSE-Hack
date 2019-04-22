@@ -18,7 +18,7 @@
           <router-link class="cat-navbar-text" to="/terms">Terms</router-link>
         </div>
         <div class="col-sm-1 offset-sm-1">
-          <router-link class="cat-navbar-text" to="/aboutUs">About</router-link>
+          <router-link class="cat-navbar-text" to="/about">About</router-link>
         </div>
 
         <div class="col-sm-1">
