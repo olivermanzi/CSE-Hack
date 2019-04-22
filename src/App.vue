@@ -36,11 +36,11 @@
           <h3>Contact</h3>
           <ul>
             <li>
-              <a v-bind:href="facebook">Facebook</a>
+              <a v-bind:href="cat_data.facebook">Facebook</a>
             </li>
             <li>
               Email
-              <a v-bind:href="mail">cat@gota.gu.se</a>
+              <a v-bind:href="cat_data.mail">cat@gota.gu.se</a>
             </li>
           </ul>
         </div>
@@ -48,7 +48,7 @@
           <h3>Location</h3>
           <ul>
             <li>
-              <p>address here</p>
+              <a v-bind:href="cat_data.location">Forskningsgången 6, 417 56 Göteborg</a>
             </li>
           </ul>
         </div>
@@ -57,7 +57,7 @@
           <ul>
             <li>
               click
-              <a v-bind:href="signup">here</a>
+              <a v-bind:href="cat_data.signup">here</a>
             </li>
           </ul>
         </div>
@@ -66,7 +66,7 @@
           <ul>
             <li>
               Click
-              <a v-bind:href="gu">here</a>
+              <a v-bind:href="cat_data.gu">here</a>
             </li>
           </ul>
         </div>
@@ -84,15 +84,12 @@
 </template>
 
 <script>
-import links from "./assets/values/links";
+import cat_data from "./assets/values/links.js";
 export default {
   name: "App",
   data() {
     return {
-      facebook: links.facebook_link,
-      mail: links.mail_link,
-      signup: links.cat_signup,
-      gu: links.gu
+      cat_data: cat_data
     };
   }
 };
